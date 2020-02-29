@@ -1,0 +1,307 @@
+/*当前位置*/
+.current_position {
+    font-size: 12px;
+    color: #333333;
+    height: 30px;
+    line-height: 30px;
+}
+
+.current_position a {
+    color: #333333;
+}
+
+.current_position a:hover {
+    color: #FB7403;
+}
+
+.current_position span {
+    cursor: text;
+}
+
+/*价格以及风景*/
+.huan_xi_bu_scenery {
+    width: 480px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+/*内容左边 start*/
+/*轮播图头部*/
+.huan_xi_bu_scenery_hd {
+    overflow: hidden;
+    position: relative;
+    height: 320px;
+}
+
+.huan_xi_bu_scenery_hd ul {
+    width: 99999px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.huan_xi_bu_scenery_hd li {
+    float: left;
+    width: 480px;
+    height: 320px;
+}
+
+.huan_xi_bu_scenery_hd li img {
+    width: 100%;
+    height: 320px;
+}
+
+/*轮播图底部*/
+.huan_xi_bu_scenery_bd {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.huan_xi_bu_scenery_bd_inner {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: none;
+}
+
+.huan_xi_bu_scenery_bd_inner span {
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    display: block;
+    background: url("../images/bg01yyy.png") no-repeat;
+    float: left;
+}
+
+.huan_xi_bu_scenery_bd_inner span:last-child {
+    width: 30px;
+    height: 40px;
+    display: block;
+    background: url("../images/bg01yyy.png") no-repeat -32px 0;
+    float: right;
+}
+
+.huanxi_bu_anliu span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    background: url("../images/bg01yyy.png") no-repeat;
+}
+
+.huanxi_bu_anliu span:first-child {
+    left: 0;
+}
+
+.huanxi_bu_anliu span:last-child {
+    right: 0;
+    background-position: -32px 0;
+}
+
+.huanxi_bu_bd_anliu {
+    margin-top: 10px;
+}
+
+.huanxi_bu_bd_anliu_ul {
+    width: 420px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+}
+
+.huanxi_bu_bd_anliu ul {
+    width: 9999px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.huanxi_bu_bd_anliu li {
+    width: 75px;
+    height: 50px;
+    float: left;
+    margin: 0 3px 0 6px;
+}
+
+.huanxi_bu_bd_anliu_boder {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.huanxi_bu_bd_anliu li img {
+    width: 100%;
+    height: 100%;
+}
+
+.huanxi_bu_bd_anliu a {
+    display: block;
+    width: 30px;
+    height: 50px;
+    background: url("../images/bg01yyy.png") no-repeat 0 -100px;
+    float: left;
+}
+
+.huanxi_bu_bd_anliu a:last-child {
+    background: url("../images/bg01yyy.png") no-repeat -32px -100px;
+}
+
+/*内容左边 end*/
+/*内容右边 start*/
+.huan_xi_bu_price {
+    float: left;
+    width: 490px;
+}
+
+.huan_xi_bu_price h2 {
+    font-size: 24px;
+    color: #959795;
+    font-weight: 400;
+}
+
+.huan_xi_bu_price .txt01 {
+    color: #333333;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.huan_xi_bu_price .txt01 span {
+    margin: 0 26px;
+}
+
+.huan_xi_bu_price .buy-box {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 488px;
+    height: 58px;
+    background: #F2F6FF;
+    font-size: 12px;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+.huan_xi_bu_price .buy-box del {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.huan_xi_bu_price .buy-box span {
+    color: #fb7403;
+    font-size: 20px;
+    vertical-align: middle;
+    transform: translateX(9px);
+    display: inline-block;
+}
+
+.huan_xi_bu_price .buy-box i {
+    color: #fb7403;
+    font-size: 34px;
+    vertical-align: middle;
+}
+
+.txt-item {
+    color: #333333;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.txt-item div {
+    display: inline-block;
+}
+
+.txt_item_one {
+    color: #333333;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.txt_item_one span {
+    float: left;
+}
+
+.txt_item_one h5 {
+    margin-top: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 20px;
+    border: 1px solid #FB7403;
+    float: left;
+    background: #FEF7F7;
+    margin-left: 10px;
+    line-height: 20px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.txt_item_one {
+    height: 40px;
+    line-height: 40px;
+}
+
+/*菜单栏*/
+.info-item {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+    background: #FAFAFA;
+}
+
+.info-menu-wrap {
+    position: relative;
+    height: 38px;
+    border: 1px solid #E6E6E6;
+}
+
+.info-menu {
+    width: 116px;
+    height: 37px;
+    line-height: 37px;
+    border-top: 2px solid #478DCD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+}
+
+.info-menu li a {
+    font-size: 14px;
+    color: #478DCD;
+    text-align: center;
+}
+
+.info-xcjs {
+    box-sizing: border-box;
+    padding: 10px 20px 10px 20px;
+    line-height: 16px;
+    text-align: left;
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid #E6E6E6;
+    border-top: 0;
+    margin-bottom: 10px;
+}
+
+.info-xcjs h6 {
+    display: inline-block;
+    color: #478DCD;
+    font-weight: normal;
+    margin-right: 8px;
+}
+.info-xcjs p{
+    color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+}
+/*内容右边 end*/

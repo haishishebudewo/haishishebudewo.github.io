@@ -1,0 +1,49 @@
+/*铁路e开通样式*/
+.e_card{
+    padding: 0 0 10px 80px;
+    border: 1px solid #DEDEDE;
+}
+.e_card h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.e_card_open h3,.e_card_explain h3{
+    color: #333333;
+    height: 42px;
+    width: 100px;
+    position: relative;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.e_card_open h3 span,.e_card_explain h3 span{
+    width: 3px;
+    height: 16px;
+    background: #3B99FC;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+}
+.e_card_open h4{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.e_card_open p{
+    font-size: 12px;
+    color:#333333;
+    line-height: 40px;
+}
+.e_card_img{
+    text-align: center;
+}
+.e_card_explain p{
+    line-height: 40px;
+    color:#333333;
+    font-size: 12px;
+}

@@ -1,0 +1,318 @@
+/*会员服务 start*/
+.member_banner {
+    overflow: hidden;
+    position: relative;
+    height: 340px;
+}
+
+/*横幅*/
+.member_banner ul {
+    width: 9999px;
+    position: absolute;
+}
+
+.member_banner li {
+    width: 1900px;
+    height: 340px;
+    float: left;
+}
+
+.member_banner li a {
+    display: block;
+    background: url("../images/b01.jpg") no-repeat top center;
+    height: 100%;
+}
+
+.member_banner li:last-child a {
+    background: url("../images/b02.jpg") no-repeat top center;
+}
+
+.member_banner li img {
+    width: 100%;
+    height: auto;
+}
+
+/*小菱形*/
+.current_rotate {
+    width: 80px;
+    height: 26px;
+    box-sizing: border-box;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.current_rotate span {
+    margin-left: 20px;
+    float: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.current_rotate .current_rotate_color {
+    background: #478DCD;
+}
+
+/*会员管理*/
+.member_run {
+    position: relative;
+}
+
+.run_inner {
+    height: 340px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #8F93E2;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.run_inner > ul > li {
+    box-sizing: border-box;
+    height: 69px;
+    padding: 0 24px;
+    padding-top: 8px;
+    position: relative;
+}
+.run_inner li ul {
+    width: 226px;
+    position: absolute;
+    left: 134px;
+    top: 0;
+    height: 64px;
+    line-height: 69px;
+    background: #B7C0F2;
+    padding: 0 10px 0 16px;
+    border-radius: 6px;
+    z-index: 8;
+    transition: display 0.6s;
+    display: none;
+}
+.run_inner span{
+    position: absolute;
+    background: #B7C0F2;
+    left: 126px;
+    top: 27px;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background: url("../images/arw3.png") no-repeat;
+    display: none;
+    transition: display 0.6s;
+}
+.run_inner > ul > li:hover ul,.run_inner > ul > li:hover span{
+    display: block;
+}
+.run_inner li li {
+    float: left;
+}
+.run_inner li li:nth-child(2){
+    margin: 0 16px;
+}
+.run_inner li li a{
+    color: #FFFFFF;
+}
+.run_inner li li a:hover{
+    color: #478DCD;
+}
+.run_inner > ul > li > a {
+    color: #FFFFFF;
+    display: block;
+    width: 68px;
+    height: 58px;
+    border-bottom: 1px solid #FFF;
+    font-size: 12px;
+    text-align: center;
+}
+.run_inner > ul > li > a i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../images/nav _xixxi.png") no-repeat;
+    margin: auto;
+    margin-bottom: 10px;
+    transition: all 0.6s;
+
+}
+
+.run_inner > ul > li:nth-child(2) i {
+    background-position: 0 -22px;
+}
+
+.run_inner > ul > li:nth-child(3) i {
+    background-position: 0 -44px;
+}
+
+.run_inner > ul > li:nth-child(4) i {
+    background-position: 0 -66px;
+}
+
+.run_inner > ul > li:nth-child(5) i {
+    background-position: 0 -88px;
+}
+
+.run_inner > ul > li:hover {
+    background: #fff;
+}
+
+.run_inner > ul > li:hover > a {
+    color: #3B99FC;
+}
+
+.run_inner > ul > li:hover i {
+    background-position: -22px 0;
+}
+
+.run_inner > ul > li:nth-child(2):hover i {
+    background-position: -22px -22px;
+}
+
+.run_inner > ul > li:nth-child(3):hover i {
+    background-position: -22px -44px;
+}
+
+.run_inner > ul > li:nth-child(4):hover i {
+    background-position: -22px -66px;
+}
+
+.run_inner > ul > li:nth-child(5):hover i {
+    background-position: -22px -88px;
+}
+
+/*推荐服务*/
+.service_ico {
+    margin: 40px auto;
+
+}
+
+.service_ico li {
+    width: 228px;
+    height: 153px;
+    background: #F5F5F5;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+    float: left;
+    margin-right: 96px;
+}
+
+.service_ico li:last-child {
+    margin-right: 0;
+}
+
+.service_ico a {
+    color: #333333;
+    font-size: 16px;
+}
+
+.service_ico i {
+    display: block;
+    width: 55px;
+    height: 60px;
+    background: url("../images/service_yyy.png") no-repeat;
+    margin: 0 auto 20px;
+    transition: all 0.6s;
+}
+
+.service_ico li:nth-child(2) i {
+    background-position: -66px 0;
+}
+
+.service_ico li:nth-child(3) i {
+    width: 59px;
+    height: 60px;
+    background-position: -120px 0;
+}
+
+.service_ico li:nth-child(4) i {
+    width: 58px;
+    background-position: -180px 0;
+}
+
+.service_ico li:hover {
+    background: #478DCD;
+}
+
+.service_ico li:hover a {
+    color: #FFFFFF;
+}
+
+.service_ico li:hover i {
+    background-position: 0 -65px;
+}
+
+.service_ico li:nth-child(2):hover i {
+    background-position: -66px -60px;
+}
+
+.service_ico li:nth-child(3):hover i {
+    background-position: -120px -60px;
+}
+
+.service_ico li:nth-child(4):hover i {
+    background-position: -180px -63px;
+}
+
+/*会员服务文本*/
+.member_content_fl h2, .member_content_fr h2 {
+    font-size: 18px;
+    color: #333333;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.member_content_fl h2 i, .member_content_fr h2 i {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #CA7C18;
+}
+
+.member_content_fl li, .member_content_fr li {
+    width: 480px;
+    height: 40px;
+    border-bottom: 1px solid #E6E6E6;
+    line-height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.member_content_fl a, .member_content_fr a {
+    color: #333333;
+    transition: all 1s;
+}
+
+.member_content_fl span, .member_content_fr span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/help.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+
+.member_content_fl li:hover, .member_content_fr li:hover {
+    background: #478DCD;
+}
+
+.member_content_fl li:hover a, .member_content_fr li:hover a {
+    color: #FFFFFF;
+}
+
+/*会员服务 start*/

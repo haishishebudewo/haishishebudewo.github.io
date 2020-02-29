@@ -1,1 +1,1034 @@
-<p>我是你爸爸</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <title>中国铁路12306</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css"><!--去除浏览器默认样式-->
+    <link rel="stylesheet" href="css/base.css"><!--公共样式-->
+    <link rel="stylesheet" href="css/index.css"><!--首页样式-->
+    <base target="_blank">
+</head>
+<body>
+<!-- 头部 start-->
+<header>
+    <!--标志-->
+    <div class="header w">
+        <div class="logo fl">
+            <h1>
+                <a href="#">中国铁路12306</a>
+            </h1>
+        </div>
+        <!--header right-->
+        <div class="header_fr fr">
+            <!--搜索框-->
+            <div class="search">
+                <input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章" id="search_input">
+                <button></button>
+            </div>
+            <!--login-->
+            <div class="login">
+                <span id="hide_show_selection">
+                    我的12306
+                    <i></i>
+                    <ul class="ulObj">
+                        <li><a href="#">火车票订单</a></li>
+                        <li><a href="#">后补订单</a></li>
+                        <li><a href="#">我的行程</a></li>
+                        <li><a href="#">我的餐饮~特产</a></li>
+                        <li><a href="#">我的保险</a></li>
+                        <li><a href="#">我的会员</a></li>
+                        <li><a href="#">查看个人信息</a></li>
+                        <li><a href="#">账户安全</a></li>
+                        <li><a href="#">常用联系人</a></li>
+                        <li><a href="#">车票快递地址</a></li>
+                        <li><a href="#">温馨服务查询</a></li>
+                    </ul>
+                </span>
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="nav_inner w">
+            <ul>
+                <li>
+                    <a href="#" class="current">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="ticket_link">
+                        车票
+                        <i class="icon" id="ceshi"></i>
+                    </a>
+                    <ul class="clearfix ticket w ulObj">
+                        <li class="clearfix">
+                            <span>购买</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">单程</a></dd>
+                                <dd><a href="#">接续换乘</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">往返</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>变更</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">退票</a></dd>
+                                <dd><a href="#">变更到站</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">改签</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>更多</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">中铁银通卡</a></dd>
+                                <dd><a href="#">市郊快速铁路</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">广九直通车</a></dd>
+                                <dd><a href="#">国际列车</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="group_buy_link">
+                        团购服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="group_buy w clearfix ulObj">
+                        <li>
+                            <a href="#">务工人员</a>
+                        </li>
+                        <li>
+                            <a href="#">学生团体</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="member_services_link">
+                        会员服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="member_services clearfix w ulObj">
+                        <li>
+                            <a href="#">会员管理</a>
+                        </li>
+                        <li>
+                            <a href="#">积分账户</a>
+                        </li>
+                        <li>
+                            <a href="#">积分兑换</a>
+                        </li>
+                        <li>
+                            <a href="#">会员专享</a>
+                        </li>
+                        <li>
+                            <a href="#">会员中心</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="station_service_link">
+                        站车服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="station_service w clearfix ulObj">
+                        <li>
+                            <a href="#">重点旅客预约</a>
+                            <a href="#" style="padding-top: 16px;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a href="#">便民托运</a>
+                            <a href="#" style="padding-top: 16px;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">共享汽车</a>
+                            <a href="#" style="padding-top: 16px;">定制接送</a>
+                        </li>
+                        <li>
+                            <a href="#">车站引导</a>
+                            <a href="#" style="padding-top: 16px;">站车风采</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="business_travel_service">
+                        商旅服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="business_travel_service w clearfix ulObj">
+                        <li>
+                            <a href="#">餐饮特产</a>
+                        </li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li>
+                            <a href="#">保险</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="guide_link">
+                        出行指南
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="clearfix guide w ulObj">
+                        <li class="clearfix">
+                            <span>购买</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">单程</a></dd>
+                                <dd><a href="#">接续换乘</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">往返</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>变更</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">退票</a></dd>
+                                <dd><a href="#">变更到站</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">改签</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>更多</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">中铁银通卡</a></dd>
+                                <dd><a href="#">市郊快速铁路</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">广九直通车</a></dd>
+                                <dd><a href="#">国际列车</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="information_service_link">
+                        信息查询
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="information_service w clearfix ulObj">
+                        <li>
+                            <a href="#">重点旅客预约</a>
+                            <a href="#" style="padding-top: 16px;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a href="#">便民托运</a>
+                            <a href="#" style="padding-top: 16px;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">共享汽车</a>
+                            <a href="#" style="padding-top: 16px;">定制接送</a>
+                        </li>
+                        <li>
+                            <a href="#">车站引导</a>
+                            <a href="#" style="padding-top: 16px;">站车风采</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- 头部 end-->
+<!--横幅 start-->
+<div class="banner">
+    <!--轮播-->
+    <div class="fullSlide">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--小圆点-->
+        <div class="circle">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--查询框-->
+    <div class="banner_search">
+        <!--查询框左边-->
+        <div class="search_left">
+            <ul>
+                <li style="background:#FFFFFF;">
+                    <a style="color: rgb(51, 153, 255)">
+                        车票
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        常用查询
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        订餐
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--查询框右边-->
+        <div class="search_right_he">
+            <div class="search_right">
+                <!--查询框右边头部-->
+                <div class="search_tab_hd">
+                    <ul>
+                        <li><a href="javascript:void(0)" target="_self" style="border-color: #3399FF">单程<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">往返<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">接续换乘<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">退改签<i></i></a></li>
+                    </ul>
+                </div>
+                <!--查询框右边底部-->
+                <div class="search_item_bd_arr">
+                    <div class="search_item_bd">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生1<i></i></li>
+                                <li>高铁/动车1<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询1</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none;">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生2<i></i></li>
+                                <li>高铁/动车2<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询2</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none;">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生3<i></i></li>
+                                <li>高铁/动车3<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询3</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none;">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生4<i></i></li>
+                                <li>高铁/动车4<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询4</button>
+                    </div>
+                </div>
+            </div>
+            <div class="search_right" style="display: none;">
+                <!--查询框右边头部-->
+                <div class="search_tab_hd">
+                    <ul>
+                        <li><a href="javascript:void(0)" target="_self" style="border-color: #3399FF">正晚点<i></i></a>
+                        </li>
+                        <li><a href="javascript:void(0)" target="_self">检票口<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">起售时间<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">天气查询<i></i></a></li>
+                    </ul>
+                </div>
+                <!--查询框右边底部-->
+                <div class="search_item_bd_arr">
+                    <div class="search_item_bd">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生1<i></i></li>
+                                <li>高铁/动车1<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询1</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生2<i></i></li>
+                                <li>高铁/动车2<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询2</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生3<i></i></li>
+                                <li>高铁/动车3<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询3</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生4<i></i></li>
+                                <li>高铁/动车4<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询4</button>
+                    </div>
+                </div>
+            </div>
+            <div class="search_right" style="display: none;">
+                <!--查询框右边头部-->
+                <div class="search_tab_hd">
+                    <ul>
+                        <li><a href="javascript:void(0)" target="_self" style="border-color: #3399FF">预定<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">餐饮<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">订单<i></i></a></li>
+                        <li><a href="javascript:void(0)" target="_self">嘤嘤嘤<i></i></a></li>
+                    </ul>
+                </div>
+                <!--查询框右边底部-->
+                <div class="search_item_bd_arr">
+                    <div class="search_item_bd">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期1</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生1<i></i></li>
+                                <li>高铁/动车1<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询1</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期2</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生2<i></i></li>
+                                <li>高铁/动车2<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询2</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期3</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生3<i></i></li>
+                                <li>高铁/动车3<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询3</button>
+                    </div>
+                    <div class="search_item_bd" style="display: none">
+                        <div class="from_chu_fa from_item">
+                            <label>出发地4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from_mu_de from_item">
+                            <label>到达地4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="from__time from_item">
+                            <label>出发日期4</label>
+                            <input type="text" placeholder="简拼/全拼/汉字">
+                            <i></i>
+                        </div>
+                        <div class="city-change">
+                            <i> </i>
+                        </div>
+                        <div class="from_bd">
+                            <ul>
+                                <li>学生4<i></i></li>
+                                <li>高铁/动车4<i></i></li>
+                            </ul>
+                        </div>
+                        <button class="query">查询4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--横幅 end-->
+<!--服务 start-->
+<div class="service w">
+    <ul class="service_list">
+        <li>
+            <a href="a_key_declare.html" target="_self">
+                <i></i>
+                <span>重点旅客预约</span>
+            </a>
+        </li>
+        <li>
+            <a href="loss.html">
+                <i></i>
+                <span>遗失物品查找</span>
+            </a>
+        </li>
+        <li>
+            <a href="shared_car.html">
+                <i></i>
+                <span>共享汽车</span>
+            </a>
+        </li>
+        <li>
+            <a href="consign.html">
+                <i></i>
+                <span>便民托运</span>
+            </a>
+        </li>
+        <li>
+            <a href="guide.html">
+                <i></i>
+                <span>车站引导</span>
+            </a>
+        </li>
+        <li>
+            <a href="guide.html">
+                <i></i>
+                <span>站车风采</span>
+            </a>
+        </li>
+        <li>
+            <a href="user_feedback.html">
+                <i></i>
+                <span>用户反馈</span>
+            </a>
+        </li>
+    </ul>
+    <div class="service_lg w">
+        <ul class="service_lg_list">
+            <li>
+                <a href="member.html">
+                    <img src="images/abanner01.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="restaurant.html">
+                    <img src="images/abanner02.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="insurance.html">
+                    <img src="images/abanner03.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="e_card.html">
+                    <img src="images/abanner04.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--服务 end-->
+
+<!--旅游 start-->
+<div class="travel w">
+    <div class="travel_tit">
+        <h3>铁路旅游</h3>
+        <span><a href="#">更多<i></i></a></span>
+    </div>
+    <div class="travel_list">
+        <ul>
+            <li>
+                <a href="railway_tourism0.html">
+                    <div class="travel_pic">
+                        <img src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游”美丽甘南三日游</p>
+                        <span><i>¥</i> 2560</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism1.html">
+                    <div class="travel_pic">
+                        <img src="images/pic2.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游” 陇上江南·行摄山>水陇南三日游</p>
+                        <span><i>¥</i> 930</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism2.html">
+                    <div class="travel_pic">
+                        <img src="images/pic3.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游”华夏寻根·人文始祖天水两日游</p>
+                        <span><i>¥</i> 980</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism3.html">
+                    <div class="travel_pic">
+                        <img src="images/pic4.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游”精品旅游线路</p>
+                        <span><i>¥</i> 3380</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism4.html">
+                    <div class="travel_pic">
+                        <img src="images/pic5.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游”美丽甘南三日游</p>
+                        <span><i>¥</i> 880</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism5.html">
+                    <div class="travel_pic">
+                        <img src="images/pic6.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游” 青海湖、茶卡2日>游</p>
+                        <span><i>¥</i> 880</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism6.html">
+                    <div class="travel_pic">
+                        <img src="images/pic7.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游”嘉敦5日游</p>
+                        <span><i>¥</i> 2260</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="railway_tourism7.html">
+                    <div class="travel_pic">
+                        <img src="images/pic8.jpg" alt="">
+                    </div>
+                    <div class="travel_info">
+                        <p>“环西部火车游” 敦煌一地三日游</p>
+                        <span><i>¥</i> 1380</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--旅游 end-->
+<!--新闻 start-->
+<div class="news w">
+    <div class="news_hd">
+        <ul>
+            <li>
+                <a>
+                    最新发布
+                </a>
+            </li>
+            <li>
+                <a>
+                    常见问题
+                </a>
+            </li>
+            <li>
+                <a>
+                    信用信息
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="news_bd">
+        <ul>
+            <li><a href="#" title="候补购票操作说明">候补购票操作说明1</a><span>2019-10-12</span></li>
+            <li><a href="#" title="公 告2018-11-03">公 告2018-11-03</a><span>2018-11-03</span></li>
+            <li><a href="#" title="关于调整互联网、电话订票起售时间的公告">关于调整互联网、电话订票起售时间的公告1</a><span>2019-10-10</span></li>
+            <li><a href="#" title="中国铁路成都局集团有限公司关于10月18日至25日加开部分列车的公告">中国铁路成都局集团有限公司关于10月18日至25日加开部分列车的公告1</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#"
+                   title="中国铁路上海局集团有限公司关于2019年10月18日增开部分旅客列车的公告">中国铁路上海局集团有限公司关于2019年10月18日增开部分旅客列车的公告1</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9692次、G9691次旅客列车的公告">中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9692次、G9691次旅客列车的公告1</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路南昌局集团有限公司关于2019年10月部分旅客列车停运信息公告">中国铁路南昌局集团有限公司关于2019年10月部分旅客列车停运信息公告1</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#"
+                   title="中国铁路南昌局集团有限公司关于2019年10月部分旅客列车增开信息公告（三）">中国铁路南昌局集团有限公司关于2019年10月部分旅客列车增开信息公告（三）1</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9622/3次等旅客列车的公告">中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9622/3次等旅客列车的公告1</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开部分旅客列车的公告">中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开部分旅客列车的公告1 </a><span>2019-10-17</span>
+            </li>
+        </ul>
+        <ul style="display: none">
+            <li><a href="#" title="候补购票操作说明">实名制车票</a></li>
+            <li><a href="#" title="公 告2018-11-03">互联网购票、换票</a></li>
+            <li><a href="#" title="关于调整互联网、电话订票起售时间的公告">售票窗口购票</a></li>
+            <li><a href="#" title="中国铁路成都局集团有限公司关于10月18日至25日加开部分列车的公告">互联网改签、变更到站</a></li>
+            <li><a href="#" title="中国铁路上海局集团有限公司关于2019年10月18日增开部分旅客列车的公告">互联网改签、变更到站</a></li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9692次、G9691次旅客列车的公告">随身携带品</a></li>
+            <li><a href="#" title="中国铁路南昌局集团有限公司关于2019年10月部分旅客列车停运信息公告">进出站</a></li>
+            <li><a href="#" title="中国铁路南昌局集团有限公司关于2019年10月部分旅客列车增开信息公告（三）">丢失车票</a></li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9622/3次等旅客列车的公告">使用居民身份证直接检票乘车</a></li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开部分旅客列车的公告">广深港跨境列车</a></li>
+        </ul>
+        <ul style="display: none">
+            <li><a href="#" title="候补购票操作说明">候补购票操作说明3</a><span>2019-10-12</span></li>
+            <li><a href="#" title="公 告2018-11-03">公 告2018-11-03</a><span>2018-11-03</span></li>
+            <li><a href="#" title="关于调整互联网、电话订票起售时间的公告">关于调整互联网、电话订票起售时间的公告3</a><span>2019-10-10</span></li>
+            <li><a href="#" title="中国铁路成都局集团有限公司关于10月18日至25日加开部分列车的公告">中国铁路成都局集团有限公司关于10月18日至25日加开部分列车的公告3</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#"
+                   title="中国铁路上海局集团有限公司关于2019年10月18日增开部分旅客列车的公告">中国铁路上海局集团有限公司关于2019年10月18日增开部分旅客列车的公告3</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9692次、G9691次旅客列车的公告">中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9692次、G9691次旅客列车的公告3</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路南昌局集团有限公司关于2019年10月部分旅客列车停运信息公告">中国铁路南昌局集团有限公司关于2019年10月部分旅客列车停运信息公告3</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#"
+                   title="中国铁路南昌局集团有限公司关于2019年10月部分旅客列车增开信息公告（三）">中国铁路南昌局集团有限公司关于2019年10月部分旅客列车增开信息公告（三）3</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9622/3次等旅客列车的公告">中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开G9622/3次等旅客列车的公告3</a><span>2019-10-17</span>
+            </li>
+            <li><a href="#" title="中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开部分旅客列车的公告">中国铁路广州局集团有限公司关于2019年10月18日至10月20日增开部分旅客列车的公告3</a><span>2019-10-17</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--新闻 end-->
+<!--底部 start-->
+<footer>
+    <!--友情链接和二维码-->
+    <div class="footer">
+        <div class="footer_lk">
+            <div class="footer_inner w">
+                <!--友情链接-->
+                <div class="links">
+                    <h2>友情链接</h2>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="J_event"><img src="images/link02.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link03.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link04.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link05.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <!--二维码-->
+                <div class="code">
+                    <ul>
+                        <li>
+                            <h2>中国铁路官方微信</h2>
+                            <img src="images/zgtlwx.png" alt="">
+                        </li>
+                        <li>
+                            <h2>中国铁路官方微博</h2>
+                            <img src="images/zgtlwb.png" alt="">
+                        </li>
+                        <li>
+                            <h2>12306 公众号</h2>
+                            <img src="images/public.png" alt="">
+                        </li>
+                        <li>
+                            <h2>铁路12306</h2>
+                            <img src="images/download.png" alt="">
+                        </li>
+                        <li>
+                            <div class="tips">官方APP下载，目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copy_inner w">
+                <span>版权所有©2008-2019 中国铁道科学研究院集团有限公司</span><br/>
+                <p>京ICP备05020493号-4 | 京ICP证150437号</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--底部 end-->
+<!--右侧浮动栏 start-->
+<div class="fixed-right">
+    <ul>
+        <li>
+            <a href="#">
+                <h4>最新发布</h4>
+                <i class="icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h4>联系客户</h4>
+                <i class="icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h4>App下载</h4>
+                <i class="icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h4>旅客出行温馨提示</h4>
+                <i class="icon"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--右侧浮动栏 end-->
+</body>
+<script src="js/focusAndCompatible.js"></script>
+<script src="js/show_hide.js"></script>
+<script src="js/bg_click.js"></script>
+<script src="js/click_carousel.js"></script>
+<script src="js/showHideBb.js"></script>
+<script src="js/page.js"></script>
+<script>
+    //顶部 start
+    let page = new window.Page();
+    //获取和失去焦点边框的颜色
+    page.focus_event(page.getId("search_input"));
+    page.focus_event_bg(page.getId("search_input"));
+    //导航栏和我的12306中显示和隐藏元素
+    page.show_hide_event(page.getId("hide_show_selection"), page.getClassName("ulObj")[0]);
+    page.show_hide_event(page.getId("ticket_link").parentElement, page.getClassName("ulObj")[1]);
+    page.show_hide_event(page.getId("group_buy_link").parentElement, page.getClassName("ulObj")[2]);
+    page.show_hide_event(page.getId("member_services_link").parentElement, page.getClassName("ulObj")[3]);
+    page.show_hide_event(page.getId("station_service_link").parentElement, page.getClassName("ulObj")[4]);
+    page.show_hide_event(page.getId("business_travel_service").parentElement, page.getClassName("ulObj")[5]);
+    page.show_hide_event(page.getId("guide_link").parentElement, page.getClassName("ulObj")[6]);
+    page.show_hide_event(page.getId("information_service_link").parentElement, page.getClassName("ulObj")[7]);
+    //顶部 end
+    //点击更改查询框背景
+    page.bg_click_current_event(page.getClassName("search_left")[0].getElementsByTagName("li"), "#3399ff", "#FFFFFF", "#FFFFFF", "#3399ff", page.getClassName("search_right_he")[0].children);
+    //轮播
+    page.click_carousel_event(page.getClassName("circle")[0], page.Focus.getFirstElement(page.getClassName("fullSlide")[0]), "active", 30000);
+    //点击更改新闻导航栏背景
+    page.bg_click_current_event(page.Focus.getFirstElement(page.getClassName("news_hd")[0]).children, "#D6D6D6", "#FFFFFF", "#3399ff", "#FFFFFF", page.getClassName("news_bd")[0].children);
+    //点击切换
+    let length_tab_hd = page.getClassName("search_tab_hd").length;
+    for (let i = 0; i < length_tab_hd; i++) {
+        page.show_hide_bb(page.getClassName("search_tab_hd")[i].getElementsByTagName("a"), page.getClassName("search_item_bd_arr")[i].children);
+    }
+</script>
+</html>

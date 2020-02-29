@@ -1,0 +1,48 @@
+.consign_service {
+    padding: 0 90px 20px 84px;
+    box-sizing: border-box;
+}
+
+.consign_content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    height: 70px;
+    line-height: 70px;
+}
+
+.consign_content p {
+    height: 40px;
+    line-height: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.consign_content .f14 {
+    font-size: 14px;
+}
+
+.consign_table {
+    padding: 0 50px 0 50px;
+    box-sizing: border-box;
+}
+
+.consign_table h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    height: 70px;
+    line-height: 70px;
+}
+.consign_table table{
+    width: 398px;
+    border-color: #000;
+    color: #333333;
+    text-align: center;
+    float: left;
+}
+.consign_table table:last-child{
+    float: right;
+}

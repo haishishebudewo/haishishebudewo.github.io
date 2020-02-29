@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高铁托运</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css"><!--去除浏览器默认样式-->
+    <link rel="stylesheet" href="css/base.css"><!--公共样式-->
+    <link rel="stylesheet" href="css/consign.css"><!--高铁托运样式-->
+</head>
+<body>
+<!--高铁托运-->
+<!--头部 start-->
+<header>
+    <!--标志-->
+    <div class="header w">
+        <div class="logo fl">
+            <h1>
+                <a href="#">中国铁路12306</a>
+            </h1>
+        </div>
+        <!--header right-->
+        <div class="header_fr fr">
+            <!--搜索框-->
+            <div class="search">
+                <input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章" id="search_input">
+                <button></button>
+            </div>
+            <!--login-->
+            <div class="login">
+                <span id="hide_show_selection">
+                    我的12306
+                    <i></i>
+                    <ul class="ulObj">
+                        <li><a href="#">火车票订单</a></li>
+                        <li><a href="#">后补订单</a></li>
+                        <li><a href="#">我的行程</a></li>
+                        <li><a href="#">我的餐饮~特产</a></li>
+                        <li><a href="#">我的保险</a></li>
+                        <li><a href="#">我的会员</a></li>
+                        <li><a href="#">查看个人信息</a></li>
+                        <li><a href="#">账户安全</a></li>
+                        <li><a href="#">常用联系人</a></li>
+                        <li><a href="#">车票快递地址</a></li>
+                        <li><a href="#">温馨服务查询</a></li>
+                    </ul>
+                </span>
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="nav_inner w">
+            <ul>
+                <li>
+                    <a href="#">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="ticket_link">
+                        车票
+                        <i class="icon" id="ceshi"></i>
+                    </a>
+                    <ul class="clearfix ticket w ulObj" id="">
+                        <li class="clearfix">
+                            <span>购买</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">单程</a></dd>
+                                <dd><a href="#">接续换乘</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">往返</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>变更</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">退票</a></dd>
+                                <dd><a href="#">变更到站</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">改签</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>更多</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">中铁银通卡</a></dd>
+                                <dd><a href="#">市郊快速铁路</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">广九直通车</a></dd>
+                                <dd><a href="#">国际列车</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="group_buy_link">
+                        团购服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="group_buy w clearfix ulObj">
+                        <li>
+                            <a href="#">务工人员</a>
+                        </li>
+                        <li>
+                            <a href="#">学生团体</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="member_services_link">
+                        会员服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="member_services clearfix w ulObj">
+                        <li>
+                            <a href="#">会员管理</a>
+                        </li>
+                        <li>
+                            <a href="#">积分账户</a>
+                        </li>
+                        <li>
+                            <a href="#">积分兑换</a>
+                        </li>
+                        <li>
+                            <a href="#">会员专享</a>
+                        </li>
+                        <li>
+                            <a href="#">会员中心</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="station_service_link" class="current">
+                        站车服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="station_service w clearfix ulObj">
+                        <li>
+                            <a href="#">重点旅客预约</a>
+                            <a href="#" style="padding-top: 16px;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a href="#">便民托运</a>
+                            <a href="#" style="padding-top: 16px;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">共享汽车</a>
+                            <a href="#" style="padding-top: 16px;">定制接送</a>
+                        </li>
+                        <li>
+                            <a href="#">车站引导</a>
+                            <a href="#" style="padding-top: 16px;">站车风采</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="business_travel_service">
+                        商旅服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="business_travel_service w clearfix ulObj">
+                        <li>
+                            <a href="#">餐饮特产</a>
+                        </li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li>
+                            <a href="#">保险</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="guide_link">
+                        出行指南
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="clearfix guide w ulObj">
+                        <li class="clearfix">
+                            <span>购买</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">单程</a></dd>
+                                <dd><a href="#">接续换乘</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">往返</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>变更</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">退票</a></dd>
+                                <dd><a href="#">变更到站</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">改签</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>更多</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">中铁银通卡</a></dd>
+                                <dd><a href="#">市郊快速铁路</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">广九直通车</a></dd>
+                                <dd><a href="#">国际列车</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="information_service_link">
+                        信息查询
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="information_service w clearfix ulObj">
+                        <li>
+                            <a href="#">重点旅客预约</a>
+                            <a href="#" style="padding-top: 16px;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a href="#">便民托运</a>
+                            <a href="#" style="padding-top: 16px;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">共享汽车</a>
+                            <a href="#" style="padding-top: 16px;">定制接送</a>
+                        </li>
+                        <li>
+                            <a href="#">车站引导</a>
+                            <a href="#" style="padding-top: 16px;">站车风采</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--头部 end-->
+<div class="consign w">
+    <!--当前位置-->
+    <div class="current_location">
+        当前位置：
+        <a href="#">个人中心 &gt;</a>
+        <a href="#">战车服务</a>
+        <span> &gt; 便民托运</span>
+    </div>
+    <!--便民托运介绍-->
+    <div class="consign_service">
+        <div class="consign_content">
+            <h2>高铁便民托运</h2>
+            <p>为改善高铁旅客出行体验，中国铁路总公司在部分高铁车站推出便民托运服务。</p>
+            <p class="f14">1.便民托运服务范围</p>
+            <p class="f14">1.1办理需求</p>
+            <p>由中国铁路在车站服务台、进站口安检区设立服务点，面向旅客个人物品、站内购买的土特产产品和不宜进站上车的旅客携带品等提供便捷、高效、安全的“站到门”托运服务，按客户要求自愿办理。 </p>
+            <p>1.2办理范围</p>
+            <p class="f14">已在69个高铁车站开通便民托运服务。为中国大陆地区超过300个城市提供服务，包括所有地市级以上城市和部分县级城市。</p>
+            <p>后期将逐步扩大办理便民托运服务的车站范围，已开办69个高铁车站的具体名称见附表。</p>
+            <p class="f14">1.3服务时限</p>
+            <p>标准服务：根据寄件时间及目的地的行政区域，最快次日18:00前送达。</p>
+            <p>特惠服务：根据寄件时间及目的地的行政区域，最快隔日23:59前送达。</p>
+            <p class="f14">2.服务价格</p>
+            <p>根据产品类型及服务时效区分价格，采用“首重+续重”的计费模式。标准服务价格标准参考：首重23元+续重10元/公斤；特惠服务价格标准参考：首重18元+续重6元/公斤，具体价格根据收寄城市在一定范围内浮动。</p>
+            <p class="f14">3.办理流程</p>
+            <p class="f14">3.1当旅客通过安检仪，被检查出携带铁路规定的禁止携带进站上车的物品，可通过“安检处置台”上的“便民托运服务”提示牌的指引，自愿选择办理便民托运服务。</p>
+            <p class="f14">3.2当旅客及所携带物品通过安检仪进站后，旅客本人可携带物品或站内购买的商品，自愿前往高铁便民托运服务台，在服务台工作人员引导下办理便民托运服务。</p>
+            <p class="f14">3.3旅客配合铁路工作人员进行货物验视，通过扫描收件员提供的“扫码寄件专用运单”，在收件员的提示下，填写运单信息以完成寄件。</p>
+            <p class="f14">4. 信息查询</p>
+            <p>旅客可通过拨打95572、95338客服电话，登录中铁快运、顺丰公司官网，下载中铁快运、顺丰公司手机APP等多种途径查询到托运物品实时运输的位置和状态。</p>
+            <p class="f14">5.其他事项</p>
+            <p class="f14">5.1旅客应确保填写的收件地址、收件人姓名、手机号码等收件信息正确、完整。</p>
+            <p class="f14">5.2国家邮政局《邮件快件实名收寄实施办法》要求在全国范围内的所有快递、物流行业在收寄快件时，必须严格执行实名认证。请旅客在交寄快件时提供有效身份证件。</p>
+            <p class="f14">5.3请收件人保持手机通信畅通，以免耽误接收快件。</p>
+        </div>
+        <div class="consign_table clearfix">
+            <h2>便民托运服务办理车站一览表</h2>
+            <table border="1" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>城市</th>
+                    <th>车站</th>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>哈尔滨</td>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>哈尔滨西</td>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>哈尔滨东</td>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>大连北</td>
+                </tr>
+                <tr>
+                    <td>大连市</td>
+                    <td>长春</td>
+                </tr>
+                <tr>
+                    <td>长春市</td>
+                    <td>沈阳</td>
+                </tr>
+                <tr>
+                    <td>沈阳市</td>
+                    <td>沈阳北</td>
+                </tr>
+                <tr>
+                    <td>沈阳市</td>
+                    <td>大连</td>
+                </tr>
+                <tr>
+                    <td>大连市</td>
+                    <td>北京南</td>
+                </tr>
+                <tr>
+                    <td>北京市</td>
+                    <td>天津西</td>
+                </tr>
+                <tr>
+                    <td>天津市</td>
+                    <td>天津</td>
+                </tr>
+                <tr>
+                    <td>北京市</td>
+                    <td>北京</td>
+                </tr>
+                <tr>
+                    <td>北京市</td>
+                    <td>北京西</td>
+                </tr>
+                <tr>
+                    <td>天津市</td>
+                    <td>天津</td>
+                </tr>
+                <tr>
+                    <td>石家庄市</td>
+                    <td>石家庄</td>
+                </tr>
+                <tr>
+                    <td>太原市</td>
+                    <td>太原南</td>
+                </tr>
+                <tr>
+                    <td>太原市</td>
+                    <td>太原</td>
+                </tr>
+                <tr>
+                    <td>呼和浩特市</td>
+                    <td>呼和浩特东</td>
+                </tr>
+                <tr>
+                    <td>郑州市</td>
+                    <td>郑州东</td>
+                </tr>
+                <tr>
+                    <td>郑州市</td>
+                    <td>郑州</td>
+                </tr>
+                <tr>
+                    <td>武汉市</td>
+                    <td>武汉</td>
+                </tr>
+                <tr>
+                    <td>武汉市</td>
+                    <td>武昌</td>
+                </tr>
+                <tr>
+                    <td>武汉市</td>
+                    <td>汉口</td>
+                </tr>
+                <tr>
+                    <td>西安市北</td>
+                    <td>西安北</td>
+                </tr>
+                <tr>
+                    <td>西安市</td>
+                    <td>西安</td>
+                </tr>
+                <tr>
+                    <td>济南市</td>
+                    <td>济南西</td>
+                </tr>
+                <tr>
+                    <td>济南市</td>
+                    <td>济南</td>
+                </tr>
+                <tr>
+                    <td>青岛市</td>
+                    <td>青岛</td>
+                </tr>
+                <tr>
+                    <td>上海市</td>
+                    <td>上海虹桥</td>
+                </tr>
+                <tr>
+                    <td>南京市</td>
+                    <td>南京南</td>
+                </tr>
+                <tr>
+                    <td>杭州市</td>
+                    <td>杭州东</td>
+                </tr>
+                <tr>
+                    <td>合肥市</td>
+                    <td>合肥南</td>
+                </tr>
+                <tr>
+                    <td>上海市</td>
+                    <td>上海</td>
+                </tr>
+                <tr>
+                    <td>上海市</td>
+                    <td>上海南</td>
+                </tr>
+            </table>
+            <table border="1" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>城市</th>
+                    <th>车站</th>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>哈尔滨</td>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>哈尔滨西</td>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>哈尔滨东</td>
+                </tr>
+                <tr>
+                    <td>哈尔滨市</td>
+                    <td>大连北</td>
+                </tr>
+                <tr>
+                    <td>大连市</td>
+                    <td>长春</td>
+                </tr>
+                <tr>
+                    <td>长春市</td>
+                    <td>沈阳</td>
+                </tr>
+                <tr>
+                    <td>沈阳市</td>
+                    <td>沈阳北</td>
+                </tr>
+                <tr>
+                    <td>沈阳市</td>
+                    <td>大连</td>
+                </tr>
+                <tr>
+                    <td>大连市</td>
+                    <td>北京南</td>
+                </tr>
+                <tr>
+                    <td>北京市</td>
+                    <td>天津西</td>
+                </tr>
+                <tr>
+                    <td>天津市</td>
+                    <td>天津</td>
+                </tr>
+                <tr>
+                    <td>北京市</td>
+                    <td>北京</td>
+                </tr>
+                <tr>
+                    <td>北京市</td>
+                    <td>北京西</td>
+                </tr>
+                <tr>
+                    <td>天津市</td>
+                    <td>天津</td>
+                </tr>
+                <tr>
+                    <td>石家庄市</td>
+                    <td>石家庄</td>
+                </tr>
+                <tr>
+                    <td>太原市</td>
+                    <td>太原南</td>
+                </tr>
+                <tr>
+                    <td>太原市</td>
+                    <td>太原</td>
+                </tr>
+                <tr>
+                    <td>呼和浩特市</td>
+                    <td>呼和浩特东</td>
+                </tr>
+                <tr>
+                    <td>郑州市</td>
+                    <td>郑州东</td>
+                </tr>
+                <tr>
+                    <td>郑州市</td>
+                    <td>郑州</td>
+                </tr>
+                <tr>
+                    <td>武汉市</td>
+                    <td>武汉</td>
+                </tr>
+                <tr>
+                    <td>武汉市</td>
+                    <td>武昌</td>
+                </tr>
+                <tr>
+                    <td>武汉市</td>
+                    <td>汉口</td>
+                </tr>
+                <tr>
+                    <td>西安市北</td>
+                    <td>西安北</td>
+                </tr>
+                <tr>
+                    <td>西安市</td>
+                    <td>西安</td>
+                </tr>
+                <tr>
+                    <td>济南市</td>
+                    <td>济南西</td>
+                </tr>
+                <tr>
+                    <td>济南市</td>
+                    <td>济南</td>
+                </tr>
+                <tr>
+                    <td>青岛市</td>
+                    <td>青岛</td>
+                </tr>
+                <tr>
+                    <td>上海市</td>
+                    <td>上海虹桥</td>
+                </tr>
+                <tr>
+                    <td>南京市</td>
+                    <td>南京南</td>
+                </tr>
+                <tr>
+                    <td>杭州市</td>
+                    <td>杭州东</td>
+                </tr>
+                <tr>
+                    <td>合肥市</td>
+                    <td>合肥南</td>
+                </tr>
+                <tr>
+                    <td>上海市</td>
+                    <td>上海</td>
+                </tr>
+                <tr>
+                    <td>上海市</td>
+                    <td>上海南</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<footer>
+    <!--友情链接和二维码-->
+    <div class="footer">
+        <div class="footer_lk">
+            <div class="footer_inner w">
+                <!--友情链接-->
+                <div class="links">
+                    <h2>友情链接</h2>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="J_event"><img src="images/link02.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link03.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link04.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link05.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <!--二维码-->
+                <div class="code">
+                    <ul>
+                        <li>
+                            <h2>中国铁路官方微信</h2>
+                            <img src="images/zgtlwx.png" alt="">
+                        </li>
+                        <li>
+                            <h2>中国铁路官方微博</h2>
+                            <img src="images/zgtlwb.png" alt="">
+                        </li>
+                        <li>
+                            <h2>12306 公众号</h2>
+                            <img src="images/public.png" alt="">
+                        </li>
+                        <li>
+                            <h2>铁路12306</h2>
+                            <img src="images/download.png" alt="">
+                        </li>
+                        <li>
+                            <div class="tips">官方APP下载，目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copy_inner w">
+                <span>版权所有©2008-2019 中国铁道科学研究院集团有限公司</span><br/>
+                <p>京ICP备05020493号-4 | 京ICP证150437号</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/focusAndCompatible.js"></script>
+<script src="js/show_hide.js"></script>
+<script src="js/bg_click.js"></script>
+<script src="js/click_carousel.js"></script>
+<script src="js/showHideBb.js"></script>
+<script src="js/page.js"></script>
+<script>
+    //顶部 start
+    let page = new window.Page();
+    //获取和失去焦点边框的颜色
+    page.focus_event(page.getId("search_input"));
+    page.focus_event_bg(page.getId("search_input"));
+    //导航栏和我的12306中显示和隐藏元素
+    page.show_hide_event(page.getId("hide_show_selection"),page.getClassName("ulObj")[0]);
+    page.show_hide_event(page.getId("ticket_link").parentElement,page.getClassName("ulObj")[1]);
+    page.show_hide_event(page.getId("group_buy_link").parentElement,page.getClassName("ulObj")[2]);
+    page.show_hide_event(page.getId("member_services_link").parentElement,page.getClassName("ulObj")[3]);
+    page.show_hide_event(page.getId("station_service_link").parentElement,page.getClassName("ulObj")[4]);
+    page.show_hide_event(page.getId("business_travel_service").parentElement,page.getClassName("ulObj")[5]);
+    page.show_hide_event(page.getId("guide_link").parentElement,page.getClassName("ulObj")[6]);
+    page.show_hide_event(page.getId("information_service_link").parentElement,page.getClassName("ulObj")[7]);
+    //顶部 end
+</script>
+</html>

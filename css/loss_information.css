@@ -1,0 +1,16 @@
+/*遗失物品查找样式*/
+/*遗失物品查找start*/
+/*旅客信息头部*/
+.information_bd {
+    border: 0;
+}
+
+.btn_submit input{
+    background: #FF8201;
+    transition: opacity 0.6s;
+    cursor: pointer;
+}
+.btn_submit input:hover{
+    opacity: 0.6;
+}
+/*遗失物品查找end*/

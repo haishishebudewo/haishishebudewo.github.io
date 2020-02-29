@@ -1,0 +1,71 @@
+/*铁路保险样式*/
+/*购保时间*/
+.insurance_information {
+    margin-top: 20px;
+    line-height: 28px;
+    color: #333333;
+    font-size: 12px;
+    position: relative;
+
+}
+
+.insurance_time {
+    position: relative;
+}
+
+.insurance_information input {
+    width: 158px;
+    height: 28px;
+    border: 1px solid #DEDEDE;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.insurance_time::after {
+    content: '\ea70';
+    width: 16px;
+    height: 16px;
+    color: #DCDEE5;
+    font-family: "icomoon";
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
+.insurance_time_number::after{
+    content: '\ea0f';
+    width: 16px;
+    height: 16px;
+    color: #DCDEE5;
+    font-family: "icomoon";
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+.insurance_time:hover::after{
+    color: #3B99FC;
+    cursor: pointer;
+}
+.insurance_search{
+    margin-left: 10px;
+}
+.insurance_search a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+}
+.insurance_search a:hover{
+    color: #CA7C18;
+    border-color: #CA7C18;
+}
+.order_information{
+    margin: 140px auto;
+    text-align: center;
+}

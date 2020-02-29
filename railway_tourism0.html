@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中国铁路旅游</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css"><!--去除浏览器默认样式-->
+    <link rel="stylesheet" href="css/base.css"><!--公共样式-->
+    <link rel="stylesheet" href="css/travel.css"><!--旅游样式-->
+</head>
+<body>
+<!--火车游美丽甘南三日-->
+<!--头部 start-->
+<header>
+    <!--铁路旅游logo-->
+    <div class="travel_logo travel_w">
+        <h1>
+            <a href="#">中国铁路旅游</a>
+        </h1>
+    </div>
+    <!--铁路旅游横幅-->
+    <div class="travel_banner clearfix">
+        <ul class="clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--小圆点-->
+        <div class="travel_current clearfix">
+            <span class="active_bg"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--铁路旅游导航-->
+    <div class="traver_nav clearfix">
+        <ul class="travel_w">
+            <li>
+                <a href="#" id="time" style="color: yellow">
+                    时间,为当前的年月日,星期
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    首页
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    客运服务
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    货运服务
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    行包服务
+                </a>
+                <span></span>
+
+            </li>
+            <li>
+                <a href="#">
+                    旅游超市
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    车站引导
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    铁路常识
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    站车风采
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    客户邮箱
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--铁路旅游搜索-->
+    <div class="traver_search">
+        <div class="traver_search_inner travel_w clearfix">
+            <!--城市定位与选择-->
+            <div class="traver_city fl">
+                <div class="traver_city_inner clearfix">
+                    <span>北京</span>
+                    <button></button>
+                    <i></i>
+                    <em></em>
+                </div>
+                <div class="traver_city_city">
+                    <dl>
+                        <dt>华北</dt>
+                        <dd style="color: red;" class="ke_xuan">北京</dd>
+                        <dd>天津</dd>
+                        <dd>河北</dd>
+                        <dd style="color: red;" class="ke_xuan">山西</dd>
+                        <dd style="color: red;" class="ke_xuan">内蒙古</dd>
+                    </dl>
+                    <dl>
+                        <dt>华南</dt>
+                        <dd style="color: red;" class="ke_xuan">广东</dd>
+                        <dd style="color: red;" class="ke_xuan">广西</dd>
+                        <dd>海南</dd>
+                    </dl>
+                    <dl>
+                        <dt>华东</dt>
+                        <dd style="color: red;" class="ke_xuan">上海</dd>
+                        <dd>江苏</dd>
+                        <dd>浙江</dd>
+                        <dd>安徽</dd>
+                        <dd style="color: red;" class="ke_xuan">福建</dd>
+                        <dd style="color: red;" class="ke_xuan">山东</dd>
+                    </dl>
+                    <dl>
+                        <dt>华中</dt>
+                        <dd style="color: red;" class="ke_xuan">河南</dd>
+                        <dd style="color: red;" class="ke_xuan">湖北</dd>
+                        <dd>湖南</dd>
+                        <dd style="color: red;" class="ke_xuan">江西</dd>
+                    </dl>
+                    <dl>
+                        <dt>西北</dt>
+                        <dd style="color: red;" class="ke_xuan">陕西</dd>
+                        <dd style="color: red;" class="ke_xuan">甘肃</dd>
+                        <dd style="color: red;" class="ke_xuan">青海</dd>
+                        <dd>宁夏</dd>
+                        <dd style="color: red;" class="ke_xuan">新疆</dd>
+                    </dl>
+                    <dl>
+                        <dt>西南</dt>
+                        <dd style="color: red;" class="ke_xuan">重庆</dd>
+                        <dd style="color: red;" class="ke_xuan">四川</dd>
+                        <dd style="color: red;" class="ke_xuan">贵州</dd>
+                        <dd style="color: red;" class="ke_xuan">云南</dd>
+                        <dd style="color: red;" class="ke_xuan">西藏</dd>
+                    </dl>
+                    <dl>
+                        <dt>东北</dt>
+                        <dd style="color: red;" class="ke_xuan">辽宁</dd>
+                        <dd>吉林</dd>
+                        <dd style="color: red;" class="ke_xuan">黑龙江</dd>
+                    </dl>
+                    <dl>
+                        <dt>台港澳</dt>
+                        <dd>台湾</dd>
+                        <dd>香港</dd>
+                        <dd>澳门</dd>
+                    </dl>
+                </div>
+            </div>
+            <!--搜索关键-->
+            <div class="search_crux fl">
+                <!--<div class="search_crux_inner">-->
+                <!---->
+                <!--</div>-->
+                <input type="text" placeholder="请输入目的地城市、关键字或主题">
+                <button>搜索</button>
+            </div>
+        </div>
+        <!--热门旅游推荐-->
+        <div class="travel_recommend_save travel_w">
+            <ul>
+                <li>热门旅游目的地：</li>
+                <li><a href="">甘肃</a></li>
+                <li><a href="">辽宁</a></li>
+                <li><a href="">山西</a></li>
+                <li><a href="">山东</a></li>
+                <li><a href="">江西</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">河南</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--头部 end->
+<!--介绍部分 start-->
+<div class="huan_xi_bu_introduce travel_w">
+    <!--当前所处位置-->
+    <div class="current_position">
+        <a href="#">首页</a>
+        <span>&gt;</span>
+        <a href="#">旅游超市</a>
+        <span>&gt;</span>
+        <span>“环西部火车游” 高品质旅游版专线列车</span>
+    </div>
+    <div class="huan_xi_bu_scenery_price clearfix">
+        <div class="huan_xi_bu_scenery">
+            <div class="huan_xi_bu_scenery_hd">
+                <ul>
+                    <li>
+                        <img src="images/travel1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel5.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel6.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel7.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel8.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel9.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel10.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel11.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/travel12.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="huan_xi_bu_scenery_bd">
+                    <div>产品图片（<span>1</span>/12）</div>
+                </div>
+            </div>
+            <div  class="huan_xi_bu_scenery_bd_inner clearfix">
+                <span id="huan_xi_bu_da_img1"></span>
+                <span id="huan_xi_bu_da_img2"></span>
+            </div>
+            <div class="huanxi_bu_bd_anliu clearfix">
+                <a href="javascript:void(0)" id="btn_left"></a>
+                <div class="huanxi_bu_bd_anliu_ul">
+                    <ul class="clearfix">
+                        <li class="huanxi_bu_bd_anliu_boder"><img src="images/travel1.jpg" alt=""></li>
+                        <li><img src="images/travel2.jpg" alt=""></li>
+                        <li><img src="images/travel3.jpg" alt=""></li>
+                        <li><img src="images/travel4.jpg" alt=""></li>
+                        <li><img src="images/travel5.jpg" alt=""></li>
+                        <li><img src="images/travel6.jpg" alt=""></li>
+                        <li><img src="images/travel7.jpg" alt=""></li>
+                        <li><img src="images/travel8.jpg" alt=""></li>
+                        <li><img src="images/travel9.jpg" alt=""></li>
+                        <li><img src="images/travel10.jpg" alt=""></li>
+                        <li><img src="images/travel11.jpg" alt=""></li>
+                        <li><img src="images/travel12.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0)" id="btn_right"></a>
+            </div>
+        </div>
+        <div class="huan_xi_bu_price">
+            <h2>“环西部火车游”西北独家，高品质游版专专线列车，欢迎您的咨询订购！</h2>
+            <div class="txt01">
+                编号：LT0001
+                <span>|</span>
+                出发地：兰州
+            </div>
+            <div class="buy-box clearfix">
+                <del>参考价</del>
+                <span>￥</span>
+                <i>2560</i>
+                /人
+            </div>
+            <div class="txt-item">
+                <span>旅游类型</span>
+                <div>跟团游</div>
+            </div>
+            <div class="txt-item">
+                <span>目的地</span>
+                <div>张掖</div>
+            </div>
+            <div class="txt-item">
+                <span>行程天数</span>
+                <div>5天</div>
+            </div>
+            <div class="txt_item_one">
+                <span>产品特色</span>
+                <h5>丝路文化</h5>
+                <h5>河西走廊</h5>
+                <h5>豪华专列</h5>
+                <h5>古迹</h5>
+                <h5>地质地貌</h5>
+            </div>
+            <div class="txt-item">
+                <span>零售商</span>
+                <div>甘肃兰铁国际旅行社有限公司</div>
+            </div>
+            <div class="txt-item">
+                <span>联系电话</span>
+                <div>4001630900</div>
+            </div>
+        </div>
+    </div>
+    <div class="info-item">
+        <div class="info-menu-wrap">
+            <div class="info-menu">
+                <ul>
+                    <li><a href="javascript:void(0)">行程介绍</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info-xcjs">
+            “环西部火车游”是中国铁路兰州局集团有限公司精心打造的亮丽名片，以铁路客运+旅游的方式，将旅游列车、火车驿站、火车主题公园、火车民宿等新型主题产品，融入了丝路文化、敦煌文化、西域文化、黄河文化，版块化联动、精品化连线，以吸引更多的国内外旅游者来丝绸之路观光游览。
+            “环西部火车游”系列旅游产品，是兰铁国旅公司充分发挥“安全、快捷、舒适”的铁路运输资源优势，结合地方发展“全域旅游”实施“引客入甘”战略，倾力打造“列车+宾馆、列车+美食、列车+美景、列车+休闲、列车+娱乐、列车+文化”的旅游新模式，全新推出集“吃、住、行、游、购、娱”为一体客运旅游系列新产品，以满足游客“多样化、个性化、定制化”的需求。
+            “环西部火车游”旅游专线车,全列使用25T型DC600V集便车体，编组由三节软卧车（载客108人）、一节硬卧车（载客57人）、两节功能车（休闲、娱乐）、一节餐车（酒吧车）构成，具有线路多、编组小、功能优等特点，实现旅游线路无缝隙接驳，游客可自由选择并组合旅游线路。
+            甘肃，历史悠久，文化厚重，自然景观异彩纷呈。被世界知名媒体《孤独星球》评为“2017亚洲最佳旅行目的地”榜单第1位，被《纽约时报》评为“2018全球必去52个目的地”榜单第17位，是亚洲唯一入选地区。 跟随
+            “环西部火车游”，您不仅能领略到甘肃雄奇壮观的风光，还能体验优质的列车旅游生活。独特的西部火车之旅，是信任之旅、缘份之旅、新、奇、特之旅。 甘肃兰铁国际旅行社有限公司竭诚欢迎您的到来！ 旅游热线：4001630900
+        </div>
+    </div>
+</div>
+<!--介绍部分 end-->
+<!--底部strat-->
+<footer>
+    <div class="travel_footer">
+        <div>
+            <a href="#">
+                关于我们
+            </a>
+            <span>|</span>
+            <a href="#">
+                网站声明
+            </a>
+        </div>
+        <p>版权所有 © 2008-2017 中国铁路信息技术中心 中国铁道科学研究院</p>
+        <p>京ICP备15003716号-3 | 京ICP证150437号</p>
+    </div>
+</footer>
+<!--底部end-->
+</body>
+<script src="js/focusAndCompatible.js"></script>
+<script src="js/show_hide.js"></script>
+<script src="js/bg_click.js"></script>
+<script src="js/click_carousel.js"></script>
+<script src="js/showHideBb.js"></script>
+<script src="js/page.js"></script>
+<script>
+    let page = new Page();
+    //横幅
+    page.click_carousel_event(page.getClassName("travel_current")[0], page.Focus.getFirstElement(page.getClassName("travel_banner")[0]), "active_bg", 30000);
+</script>
+<!--jQuery实现代码-->
+<script src="jquery-1.12.1.js"></script>
+<script src="js/railway_tourism.js"></script>
+<script>
+    function getDates(dt) {
+        let str1 = "";//存储时间的字符串
+        let str2 = "";//存储时间的字符串
+        //获取年
+        let year = dt.getFullYear();
+        //获取月
+        let month = dt.getMonth() + 1;
+        //获取日
+        let day = dt.getDate();
+        //获取小时
+        let hour = dt.getHours();
+        //获取分钟
+        let min = dt.getMinutes();
+        //获取秒
+        let sec = dt.getSeconds();
+        //获取星期
+        let week = dt.getDay();
+        month = month < 10 ? "0" + month : month;
+        day = day < 10 ? "0" + day : day;
+        hour = hour < 10 ? "0" + hour : hour;
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+        str1 = year + "年" + month + "月" + day + "日" + "星期" + week;
+        return str1;
+    }
+
+    let dt = new Date();
+    document.getElementById("time").innerHTML = getDates(dt);
+</script>
+</html>

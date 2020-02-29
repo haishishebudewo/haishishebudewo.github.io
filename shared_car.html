@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>共享汽车</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css"><!--去除浏览器默认样式-->
+    <link rel="stylesheet" href="css/base.css"><!--公共样式-->
+    <link rel="stylesheet" href="css/shared_car.css"><!--共享汽车样式-->
+</head>
+<body>
+<!-- 头部 start-->
+<header>
+    <!--标志-->
+    <div class="header w">
+        <div class="logo fl">
+            <h1>
+                <a href="#">中国铁路12306</a>
+            </h1>
+        </div>
+        <!--header right-->
+        <div class="header_fr fr">
+            <!--搜索框-->
+            <div class="search">
+                <input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章" id="search_input">
+                <button></button>
+            </div>
+            <!--login-->
+            <div class="login">
+                <span id="hide_show_selection">
+                    我的12306
+                    <i></i>
+                    <ul class="ulObj">
+                        <li><a href="#">火车票订单</a></li>
+                        <li><a href="#">后补订单</a></li>
+                        <li><a href="#">我的行程</a></li>
+                        <li><a href="#">我的餐饮~特产</a></li>
+                        <li><a href="#">我的保险</a></li>
+                        <li><a href="#">我的会员</a></li>
+                        <li><a href="#">查看个人信息</a></li>
+                        <li><a href="#">账户安全</a></li>
+                        <li><a href="#">常用联系人</a></li>
+                        <li><a href="#">车票快递地址</a></li>
+                        <li><a href="#">温馨服务查询</a></li>
+                    </ul>
+                </span>
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="nav_inner w">
+            <ul>
+                <li>
+                    <a href="#">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="ticket_link">
+                        车票
+                        <i class="icon" id="ceshi"></i>
+                    </a>
+                    <ul class="clearfix ticket w ulObj" id="">
+                        <li class="clearfix">
+                            <span>购买</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">单程</a></dd>
+                                <dd><a href="#">接续换乘</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">往返</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>变更</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">退票</a></dd>
+                                <dd><a href="#">变更到站</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">改签</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>更多</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">中铁银通卡</a></dd>
+                                <dd><a href="#">市郊快速铁路</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">广九直通车</a></dd>
+                                <dd><a href="#">国际列车</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="group_buy_link">
+                        团购服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="group_buy w clearfix ulObj">
+                        <li>
+                            <a href="#">务工人员</a>
+                        </li>
+                        <li>
+                            <a href="#">学生团体</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="member_services_link">
+                        会员服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="member_services clearfix w ulObj">
+                        <li>
+                            <a href="#">会员管理</a>
+                        </li>
+                        <li>
+                            <a href="#">积分账户</a>
+                        </li>
+                        <li>
+                            <a href="#">积分兑换</a>
+                        </li>
+                        <li>
+                            <a href="#">会员专享</a>
+                        </li>
+                        <li>
+                            <a href="#">会员中心</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="station_service_link" class="current">
+                        站车服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="station_service w clearfix ulObj">
+                        <li>
+                            <a href="#">重点旅客预约</a>
+                            <a href="#" style="padding-top: 16px;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a href="#">便民托运</a>
+                            <a href="#" style="padding-top: 16px;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">共享汽车</a>
+                            <a href="#" style="padding-top: 16px;">定制接送</a>
+                        </li>
+                        <li>
+                            <a href="#">车站引导</a>
+                            <a href="#" style="padding-top: 16px;">站车风采</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="business_travel_service">
+                        商旅服务
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="business_travel_service w clearfix ulObj">
+                        <li>
+                            <a href="#">餐饮特产</a>
+                        </li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li>
+                            <a href="#">保险</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="guide_link">
+                        出行指南
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="clearfix guide w ulObj">
+                        <li class="clearfix">
+                            <span>购买</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">单程</a></dd>
+                                <dd><a href="#">接续换乘</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">往返</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>变更</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">退票</a></dd>
+                                <dd><a href="#">变更到站</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">改签</a></dd>
+                            </dl>
+                        </li>
+                        <li class="clearfix">
+                            <span>更多</span>
+                            <dl class="clearfix">
+                                <dd><a href="#">中铁银通卡</a></dd>
+                                <dd><a href="#">市郊快速铁路</a></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dd><a href="#">广九直通车</a></dd>
+                                <dd><a href="#">国际列车</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="information_service_link">
+                        信息查询
+                        <i class="icon"></i>
+                    </a>
+                    <ul class="information_service w clearfix ulObj">
+                        <li>
+                            <a href="#">重点旅客预约</a>
+                            <a href="#" style="padding-top: 16px;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a href="#">便民托运</a>
+                            <a href="#" style="padding-top: 16px;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">共享汽车</a>
+                            <a href="#" style="padding-top: 16px;">定制接送</a>
+                        </li>
+                        <li>
+                            <a href="#">车站引导</a>
+                            <a href="#" style="padding-top: 16px;">站车风采</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- 头部 end-->
+<!--共享汽车start-->
+<div class="shared_car w">
+    <!--当前位置-->
+    <div class="current_location">
+        当前位置：
+        <a href="#">个人中心 &gt;</a>
+            <a href="#">站车服务</a>
+        <span> &gt; 遗失物品查找服务说明</span>
+    </div>
+    <!--共享汽车服务介绍-->
+    <div class="shared_car_service">
+        <h2>高铁+共享汽车</h2>
+        <div class="service_title">
+            <span><em></em>服务介绍</span>
+        </div>
+        <div class="service_content">
+            <p>为方便旅客出行，有效解决旅客乘火车后到达目的地“最后一公里”问题，铁路部门推出了“高铁+共享汽车”服务，为旅客提供燃油汽车、新能源汽车等多种租赁共享选择，帮助旅客在交通中转上实现无缝对接，把更优质、更便捷、更实惠的服务带给每一位旅客。</p>
+            <p>目前该项服务已在中国铁路昆明局集团开通，在昆明、大理、丽江、普者黑、楚雄均设有服务站点。业务涵盖日租赁和分时租赁，旅客在“昆铁云行”微信公众号、“12306”APP、“昆铁+”APP都可完成车辆预定，到达门店后通过办理相关手续就可使用日租赁车辆。同时也可以通过扫描汽车车身二维码下载“昆铁云行”APP，在相应页面上传身份证和驾驶证照片，并支付押金就可轻松使用分时租赁共享汽车。</p>
+        </div>
+        <!--昆明照片-->
+        <div class="pic_title">
+            <span><em></em>昆明局“高铁+共享汽车”实景照片</span>
+        </div>
+        <div class="pic_inner">
+            <img src="images/shared_car_km1.png" alt="">
+            <img src="images/shared_car_km2.png" alt="">
+            <img src="images/shared_car_km3.png" alt="">
+            <img src="images/shared_car_km4.png" alt="">
+            <img src="images/shared_car_km5.png" alt="">
+            <img src="images/shared_car_km6.png" alt="">
+            <img src="images/shared_car_km7.png" alt="">
+            <p>此外，“高铁+共享汽车+旅游”综合服务产品正在推进中，“昆铁云行”期待您的光临！</p>
+        </div>
+    </div>
+</div>
+<!--共享汽车end-->
+<!--底部start-->
+<footer>
+    <!--友情链接和二维码-->
+    <div class="footer">
+        <div class="footer_lk">
+            <div class="footer_inner w">
+                <!--友情链接-->
+                <div class="links">
+                    <h2>友情链接</h2>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="J_event"><img src="images/link02.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link03.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link04.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="images/link05.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <!--二维码-->
+                <div class="code">
+                    <ul>
+                        <li>
+                            <h2>中国铁路官方微信</h2>
+                            <img src="images/zgtlwx.png" alt="">
+                        </li>
+                        <li>
+                            <h2>中国铁路官方微博</h2>
+                            <img src="images/zgtlwb.png" alt="">
+                        </li>
+                        <li>
+                            <h2>12306 公众号</h2>
+                            <img src="images/public.png" alt="">
+                        </li>
+                        <li>
+                            <h2>铁路12306</h2>
+                            <img src="images/download.png" alt="">
+                        </li>
+                        <li>
+                            <div class="tips">官方APP下载，目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copy_inner w">
+                <span>版权所有©2008-2019 中国铁道科学研究院集团有限公司</span><br/>
+                <p>京ICP备05020493号-4 | 京ICP证150437号</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--底部end-->
+</body>
+<script src="js/focusAndCompatible.js"></script>
+<script src="js/show_hide.js"></script>
+<script src="js/bg_click.js"></script>
+<script src="js/click_carousel.js"></script>
+<script src="js/showHideBb.js"></script>
+<script src="js/page.js"></script>
+<script>
+    //顶部 start
+    let page = new window.Page();
+    //获取和失去焦点边框的颜色
+    page.focus_event(page.getId("search_input"));
+    page.focus_event_bg(page.getId("search_input"));
+    //导航栏和我的12306中显示和隐藏元素
+    page.show_hide_event(page.getId("hide_show_selection"),page.getClassName("ulObj")[0]);
+    page.show_hide_event(page.getId("ticket_link").parentElement,page.getClassName("ulObj")[1]);
+    page.show_hide_event(page.getId("group_buy_link").parentElement,page.getClassName("ulObj")[2]);
+    page.show_hide_event(page.getId("member_services_link").parentElement,page.getClassName("ulObj")[3]);
+    page.show_hide_event(page.getId("station_service_link").parentElement,page.getClassName("ulObj")[4]);
+    page.show_hide_event(page.getId("business_travel_service").parentElement,page.getClassName("ulObj")[5]);
+    page.show_hide_event(page.getId("guide_link").parentElement,page.getClassName("ulObj")[6]);
+    page.show_hide_event(page.getId("information_service_link").parentElement,page.getClassName("ulObj")[7]);
+    //顶部 end
+</script>
+</html>

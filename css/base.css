@@ -1,0 +1,1336 @@
+/*公共样式*/
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd {
+    /* 默认有边距，都要清除 */
+    margin: 0;
+    padding: 0;
+    /*字体设置*/
+    font-size: 14px;
+    font-family: "Microsoft Yahei", sans-serif;
+    color: #ccc;
+    /* 去掉列表的原点 */
+    list-style: none;
+    /* 默认鼠标 */
+    cursor: default;
+}
+
+/*可选*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/*行内块元素*/
+input, img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: bottom;
+}
+
+/*行内元素*/
+a, a:active, a:visited {
+    /*下划线和颜色*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+textarea {
+    /* 边框清零 */
+    border: none;
+    /* 轮廓线清零 */
+    outline: none;
+    /* 防止文本域被随意拖拽 */
+    resize: none;
+}
+
+i {
+    /*文字样式*/
+    font-style: normal;
+}
+
+table {
+    /*边框合并*/
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*可选*/
+/*单选框和复选框的配置，一般是分开的*/
+input[type="radio"], input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+label input[type="radio"] + span, label input[type="checkbox"] + span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("../images/nocheck.png") no-repeat;
+}
+
+label input[type="radio"]:checked + span, label input[type="checkbox"]:checked + span {
+    background: url("../images/check.png") no-repeat;
+}
+
+label input[type="radio"]:checked ~ i, label input[type="checkbox"]:checked ~ i {
+    color: #38d6ff;
+}
+
+/*可选*/
+/* 自定义数字框配置 */
+input[type="number"] {
+    width: 76px;
+    height: 36px;
+    background-color: rgba(5, 45, 82, 0.4);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] + div {
+    width: 30px;
+    height: 40px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+input[type="number"] + div > .count_add {
+    display: block;
+    width: 28px;
+    height: 19px;
+    background: url("../images/count_add.png") no-repeat;
+    background-size: contain;
+    margin-bottom: 2px;
+}
+
+input[type="number"] + div > .count_subtract {
+    display: block;
+    width: 28px;
+    height: 19px;
+    background: url("../images/count_subtract.png") no-repeat;
+    background-size: contain;
+}
+
+/*icomoon图标引用*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?fkjvjs');
+    src: url('../fonts/icomoon.eot?fkjvjs#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fkjvjs') format('truetype'),
+    url('../fonts/icomoon.woff?fkjvjs') format('woff'),
+    url('../fonts/icomoon.svg?fkjvjs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon {
+    font-family: "icomoon";
+}
+
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 版心*/
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+/*左浮动*/
+.fl {
+    float: left;
+}
+
+/*右浮动*/
+.fr {
+    float: right;
+}
+
+/*清除图片空隙*/
+img {
+    vertical-align: middle;
+}
+
+body {
+    background: #ffffff;
+}
+
+.current_bg {
+    background: #3B99FC;
+}
+
+/*头部 start*/
+.header {
+    height: 80px;
+}
+
+.logo {
+    box-sizing: border-box;
+    padding-top: 17px;
+}
+
+.logo a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url("../images/logo.jpg");
+}
+
+.header_fr {
+    padding-top: 30px;
+    width: 790px;
+}
+
+/*搜索框*/
+.search {
+    float: left;
+    width: 450px;
+}
+
+.search input {
+    width: 410px;
+    height: 30px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: 1px solid #cccccc;
+    float: left;
+}
+
+.search button {
+    font-family: "icomoon";
+    width: 40px;
+    height: 30px;
+    background: #3399ff;
+    float: left;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search button:hover {
+    opacity: .8;
+}
+
+/*登录*/
+.login {
+    float: right;
+    margin-right: 7px;
+    font-size: 12px;
+}
+
+.login span {
+    height: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #9999ff;
+    position: relative;
+    margin-right: 20px;
+}
+
+.login span ul {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background: #FFFFFF;
+    border: 1px solid #cccccc;
+    width: 136px;
+    top: 25px;
+    left: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.login span a {
+    display: block;
+    width: 136px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.login span:after {
+    content: "\ea1c";
+    font-family: "icomoon";
+    padding: 0 6px 0;
+    font-size: 12px;
+}
+
+.login span i {
+    width: 1px;
+    display: inline-block;
+    height: 12px;
+    background: #9999ff;
+    position: absolute;
+    right: -10px;
+    top: 3px;
+}
+
+.login a {
+    color: #333333;
+}
+
+/*导航栏*/
+.current {
+    background: #3366cc;
+}
+
+.nav {
+    background: #3399ff;
+}
+
+.nav_inner {
+    height: 40px;
+}
+
+.nav_inner li {
+    float: left;
+    position: relative;
+}
+
+/*车票*/
+.nav_inner .ticket, .nav_inner .guide {
+    z-index: 10;
+    position: absolute;
+    left: -145px;
+    top: 39px;
+    border: 1px solid #3B99FC;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 16px 0 14px 0;
+    display: none;
+}
+
+/*出行指南*/
+.nav_inner .guide {
+    display: none;
+    left: -870px;
+}
+
+.nav_inner .ticket li, .nav_inner .guide li {
+    width: 366px;
+    border-right: 1px solid #3B99FF;
+    margin-left: 30px;
+    color: #3B99FC;
+}
+
+.nav_inner .ticket li:last-child, .nav_inner .guide li:last-child {
+    border-right: 0;
+}
+
+.ticket li span, .guide li span {
+    font-size: 14px;
+    display: block;
+}
+
+.nav_inner .ticket dl, .nav_inner .guide dl {
+    float: left;
+    width: 170px;
+    height: 64px;
+    box-sizing: border-box;
+    border-right: 1px solid #3B99FF;
+}
+
+.ticket dd a, .guide dd a {
+    display: inline;
+    color: #666666;
+    background: #FFFFFF;
+    font-size: 12px;
+}
+
+.ticket dd a:hover, .guide dd a:hover {
+    background: #FFFFFF;
+    color: #3B99FC;
+}
+
+.nav_inner .ticket dl:last-child, .nav_inner .guide dl:last-child {
+    border: 0;
+    margin-left: 20px;
+}
+
+.ticket dl dd, .guide dl dd {
+    margin-top: 12px;
+}
+
+.group_buy li, .member_services li, .business_travel_service li, .station_service li, .information_service li {
+    width: 170px;
+    float: left;
+    padding: 10px 0;
+    margin-left: 30px;
+    border-right: 1px solid #3B99FC;
+}
+
+.group_buy li a, .member_services li a, .business_travel_service li a, .station_service li a, .information_service li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: #666666;
+    background: #FFFFFF;
+}
+
+.group_buy a:hover, .member_services a:hover, .business_travel_service a:hover, .station_service a:hover, .information_service a:hover {
+    color: #3B99FC;
+    background: #FFFFFF;
+}
+
+/*团购服务*/
+.nav_inner .group_buy, .nav_inner .member_services {
+    z-index: 10;
+    position: absolute;
+    left: -290px;
+    top: 39px;
+    border: 1px solid #3B99FC;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 16px 0 14px 0;
+    display: none;
+}
+
+/*会员服务*/
+.nav_inner .member_services {
+    /*display: block;*/
+    left: -435px;
+    top: 39px;
+}
+
+/*商旅服务*/
+.nav_inner .business_travel_service {
+    z-index: 10;
+    position: absolute;
+    right: -330px;
+    top: 39px;
+    border: 1px solid #3B99FC;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 16px 0 14px 0;
+    display: none;
+}
+
+/*站车服务*/
+.nav_inner .station_service {
+    z-index: 10;
+    position: absolute;
+    right: -474px;
+    top: 39px;
+    border: 1px solid #3B99FC;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 16px 0 14px 0;
+    display: none;
+}
+
+/*信息查询*/
+.nav_inner .information_service {
+    z-index: 10;
+    position: absolute;
+    right: -40px;
+    top: 39px;
+    border: 1px solid #3B99FC;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 16px 0 14px 0;
+    display: none;
+}
+
+.nav_inner > ul > li > a {
+    display: block;
+    width: 145px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav_inner a i {
+    display: inline-block;
+    margin-left: 4px;
+    height: 8px;
+    transition: transform 0.6s;
+    font-size: 16px;
+    line-height: 2px;
+}
+
+.nav_inner > ul > li > a:hover {
+    background: #3377ff;
+}
+
+.nav_inner > ul > li > a:hover i {
+    transform: rotate(180deg);
+}
+
+/*头部 end*/
+
+/*底部 start*/
+footer {
+    height: 270px;
+}
+
+/*友情链接*/
+.footer {
+    height: 272px;
+}
+
+.footer_lk {
+    height: 194px;
+    padding-top: 30px;
+}
+
+.footer_inner {
+    height: 100%;
+    padding-left: 55px;
+    box-sizing: border-box;
+}
+
+/*友情链接*/
+.links {
+    float: left;
+}
+
+.links h2, .code h2 {
+    font-size: 12px;
+    color: #333333;
+    font-weight: 400;
+    cursor: text;
+}
+
+.links ul {
+    width: 410px;
+    padding-top: 18px;
+}
+
+.links ul li {
+    cursor: pointer;
+    float: left;
+    width: 198px;
+    height: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+}
+
+.links ul li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.links ul li img {
+    width: 100%;
+    height: auto;
+}
+
+/*二维码*/
+.code {
+    float: left;
+    margin-left: 44px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.code ul {
+    overflow: hidden;
+}
+
+.code li {
+    float: left;
+}
+
+.code li img {
+    width: 78px;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    margin-top: 18px;
+}
+
+.code li {
+    margin-right: 60px;
+}
+
+.code li:nth-child(2) {
+    margin-right: 45px;
+}
+
+.code li:nth-child(3) {
+    margin-right: 30px;
+}
+
+.code li:nth-child(4) {
+    margin-right: 16px;
+}
+
+.code li:nth-child(5) {
+    margin-right: 0;
+}
+
+.tips {
+    cursor: text;
+    width: 180px;
+    height: 78px;
+    border: 1px solid #ccc;
+    margin: 0;
+    color: #333;
+    box-sizing: border-box;
+    padding: 10px 8px;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    background: #ffffff;
+}
+
+/*版权*/
+.copy {
+    background: #666666;
+    height: 78px;
+}
+
+.copy_inner {
+    height: 100%;
+    text-align: center;
+}
+
+.copy_inner span {
+    margin: 16px 0 16px 0;
+    height: 50px;
+    line-height: 50px;
+    cursor: text;
+}
+
+.copy_inner p {
+    display: inline-block;
+    cursor: text;
+}
+
+/*底部 end*/
+
+/*服务菜单栏 start*/
+.information_completion {
+    overflow: hidden;
+}
+
+/*当前位置*/
+.current_location {
+    height: 50px;
+    color: #666666;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+.current_location a {
+    color: #666666;
+}
+
+.current_location span {
+    color: #3B99FC;
+}
+
+/*左边导航栏*/
+.declare_left {
+    float: left;
+    margin-right: 30px;
+}
+
+.declare_left dt {
+    font-weight: 700;
+}
+
+.content_menu {
+    width: 130px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.content_menu dt {
+    padding-left: 10px;
+    color: #333;
+    font-weight: 700;
+    cursor: text;
+    position: relative;
+}
+
+.content_menu dt i {
+    font-family: "icomoon";
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    cursor: pointer;
+}
+
+.content_menu dt i:hover {
+    color: #3B99FC;
+}
+
+.content_menu dd {
+    padding-left: 20px;
+    color: #666;
+    cursor: pointer;
+}
+
+.content_menu dl a {
+    color: #333;
+}
+
+.content_menu dl a:hover {
+    color: #3B99FC;
+}
+
+/*同意和不同意按钮*/
+.btn_center {
+    text-align: center;
+}
+
+.btn_center .no {
+    height: 28px;
+    width: 118px;
+    border: 1px solid #DEDEDE;
+    background: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.btn_center .no:hover {
+    color: #FF8201;
+    border-color: #FF8201;
+}
+
+.btn_center .yes {
+    border-radius: 6px;
+    height: 28px;
+    width: 118px;
+    border: 1px solid #FF8201;
+    background: #FF8201;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.btn_center .yes:hover {
+    background: rgba(255, 130, 1, .7);
+}
+
+/*服务菜单栏 end*/
+
+/*右侧条款说明 start*/
+.explain_right {
+    width: 1026px;
+    height: 690px;
+    border: 1px solid #DEDEDE;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.explain_content {
+    padding-bottom: 22px;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 40px;
+}
+
+.explain_right h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #33335A;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.explain_right p {
+    line-height: 20px;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+/*同意和不同意按钮*/
+.btn_center {
+    text-align: center;
+}
+
+.btn_center .no {
+    height: 28px;
+    width: 118px;
+    border: 1px solid #DEDEDE;
+    background: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.btn_center .no:hover {
+    color: #FF8201;
+    border-color: #FF8201;
+}
+
+.btn_center .yes {
+    border-radius: 6px;
+    height: 28px;
+    width: 118px;
+    border: 1px solid #FF8201;
+    background: #FF8201;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.btn_center .yes:hover {
+    background: rgba(255, 130, 1, .7);
+}
+
+/*右侧条款说明 end*/
+/*右侧旅客信息 start*/
+.information_right {
+    width: 1026px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    padding: 38px 18px 0 18px;
+}
+
+/*信息框*/
+.information_bd {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #ccc;
+}
+
+.information_right h2 {
+    font-size: 12px;
+    color: #333333;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+/*乘车人和信息*/
+.input_mb_color { /*input公共样式*/
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input_mb_color span {
+    display: block;
+    width: 200px;
+    text-align: right;
+    float: left;
+    padding: 8px 0;
+}
+
+.input_mb_color span em {
+    color: #FF0052;
+    font-size: 12px;
+    font-style: normal;
+    padding-right: 3px;
+}
+
+.input_mb_color input {
+    width: 198px;
+    height: 28px;
+    border: 1px solid #DEDEDE;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    float: left;
+    outline: #3B99FC;
+    cursor: pointer;
+    position: relative;
+}
+
+/*下箭头*/
+.input_mb_color div {
+    width: 400px;
+    position: relative;
+}
+
+.down_arrow {
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    display: block;
+    transition: transform 0.6s;
+}
+
+.down_arrow::after {
+    content: "\ea50";
+    display: inline-block;
+    height: 10px;
+    font-family: "icomoon";
+    font-size: 16px;
+    transition: transform 1s;
+    line-height: 7px;
+}
+
+/*旋转*/
+.rotate_base {
+    transform: rotate(180deg);
+}
+
+.input_mb_color input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.message input {
+    width: 480px;
+    height: 28px;
+    color: #999999;
+    cursor: text;
+}
+
+.message input::-webkit-input-placeholder {
+    color: #666;
+}
+
+.mr94 {
+    margin-right: 94px;
+}
+
+/*性别*/
+.gender {
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+.gender div {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    float: left;
+    padding: 8px 0;
+    color: #333;
+    font-size: 12px;
+
+}
+
+.gender span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-top: 7px;
+}
+
+.gender span:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+}
+
+.gender ins {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 12px;
+    margin-right: 10px;
+    transform: translateY(-2px);
+    color: #000;
+}
+
+.service_need {
+    clear: both;
+    font-size: 12px;
+    color: #333333;
+    font-weight: 700;
+}
+
+/*温馨提示*/
+.reminder {
+    padding: 12px 20px 10px 20px;
+    background: #FFFBF8;
+    border: 2px solid #FFDDBA;
+    margin-bottom: 20px;
+}
+
+.reminder h2 {
+    padding-bottom: 7px;
+}
+
+.reminder p {
+    line-height: 20px;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+/*旅客信息 end*/
+
+/*提交 start*/
+.btn_submit input {
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    background: #EAEDED;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/*提交 end*/
+/*铁路旅游头部 strat*/
+/*版心*/
+.travel_w{
+    width: 980px;
+    margin: auto;
+}
+/*中国铁路旅游logo*/
+.travel_logo {
+    position: relative;
+}
+
+.travel_logo a {
+    overflow: hidden;
+    display: block;
+    background: url("../images/logo2.png") no-repeat;
+    width: 290px;
+    height: 92px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-indent: -999px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.travel_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+
+.travel_banner ul {
+    width: 99999px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.travel_banner li {
+    width: 1920px;
+    height: 400px;
+    float: left;
+    background: url("../images/19.jpg") no-repeat top center;
+}
+
+.travel_banner li:nth-child(2) {
+    background: url("../images/24.jpg") no-repeat top center;
+}
+
+.travel_banner li:nth-child(3) {
+    background: url("../images/23.jpg") no-repeat top center;
+}
+
+.travel_banner li:nth-child(4) {
+    background-image: url("../images/16.jpg");
+}
+
+.travel_banner li:nth-child(5) {
+    background-image: url("../images/18.jpg");
+}
+
+/*小圆点*/
+.travel_current {
+    cursor: pointer;
+    width: 190px;
+    height: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.travel_current span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ABB2B8;
+    margin: 5px 8px;
+    float: left;
+}
+
+.travel_current span.active_bg {
+    background: #FFF;
+}
+
+/*导航栏*/
+.traver_nav {
+    height: 30px;
+    padding: 7px 0;
+    background: #1476BD;
+    line-height: 30px;
+}
+
+.traver_nav li {
+    float: left;
+    position: relative;
+}
+
+.traver_nav a {
+    padding: 0 18px;
+    display: block;
+    /*border-right: 1px solid #83C0E6;*/
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.traver_nav li span {
+    display: block;
+    height: 17px;
+    width: 1px;
+    background: #83C0E6;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+/*铁路旅游搜索*/
+.traver_search {
+    height: 100px;
+    background: #3D5D7C;
+}
+
+/*城市定位与选择*/
+.traver_search_inner {
+    padding-top: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.traver_city {
+    width: 240px;
+    height: 40px;
+    border: 1px solid #CDCDCD;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #478DD7;
+    font-family: "icomoon";
+    position: relative;
+    margin-right: 18px;
+    border-radius: 6px;
+
+}
+
+.traver_city_city {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 10;
+    width: 360px;
+    background: #FFFFFF;
+    padding: 16px 0 0 16px;
+    display: none;
+}
+
+.traver_city_city dl {
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+}
+
+.traver_city_city dt, .traver_city_city dd {
+    color: #3D5D7C;
+    float: left;
+    width: 46px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.traver_city span {
+    display: inline-block;
+    float: left;
+    padding-left: 40px;
+    box-sizing: border-box;
+    width: 201px;
+    height: 40px;
+    border-right: 1px solid #CDCDCD;
+    line-height: 40px;
+    color: #478DD7;
+}
+
+.traver_city button {
+    width: 39px;
+    height: 40px;
+    outline: none;
+    float: left;
+    border: 0;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.traver_city i {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 14px;
+}
+
+.traver_city em {
+    font-style: normal;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.search_crux {
+    width: 470px;
+    height: 40px;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+    border-right: 0;
+}
+
+.search_crux input {
+    float: left;
+    width: 350px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.search_crux button {
+    width: 120px;
+    height: 40px;
+    background: #63AFED;
+    border: 0;
+    outline: none;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #FFFFFF;
+    transition: opacity 0.4s;
+    cursor: pointer;
+}
+
+.search_crux button:hover {
+    opacity: 0.6;
+}
+
+.travel_recommend_save {
+
+}
+
+.travel_recommend_save ul {
+    overflow: hidden;
+}
+
+.travel_recommend_save li {
+    float: left;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.travel_recommend_save li a {
+    display: block;
+    width: 40px;
+    color: #999999;
+}
+
+.traver_nav > ul > li:first-child a{
+    cursor: text;
+}
+
+.traver_nav > ul > li:first-child a:hover {
+    text-decoration: none;
+}
+
+.traver_nav > ul > li a:hover {
+    text-decoration: underline;
+}
+
+/*火车游美丽甘南三日底部start*/
+footer {
+    border-top: 2px solid #468DCD;
+    background: #F6F6F6;
+    height: 98px;
+    text-align: center;
+}
+
+.travel_footer div {
+    margin-top: 20px;
+    height: 20px;
+}
+
+.travel_footer div span {
+    cursor: text;
+}
+
+.travel_footer div a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.travel_footer div a:hover {
+    color: #FB7403;
+}
+
+.travel_footer p {
+    color: #999999;
+    height: 20px;
+}
+
+/*火车游美丽甘南三日底部end*/
+/*盒子阴影*/
+.shadow {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .4);
+}
+
+/*铁路旅游头部 end*/
+

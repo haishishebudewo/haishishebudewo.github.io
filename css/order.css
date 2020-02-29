@@ -1,0 +1,65 @@
+/*重点旅客预约样式*/
+/*残疾类型*/
+.deformity_hd{
+    padding: 20px 0 16px 0;
+}
+.arrival_hd{
+    padding: 0 0 20px 0;
+}
+/*进站出战*/
+.selection_bd span {
+    display: inline-block;
+    position: relative;
+}
+.departure_bd span {
+    display: inline-block;
+    position: relative;
+}
+.selection_bd span,.departure_bd span{
+    box-sizing: border-box;
+}
+.departure_bd i,.selection_bd i{
+    position: absolute;
+    right: 34px;
+    top: 7px;
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+.selection_bd i::before,.departure_bd i::before{
+    content: "\ea11";
+    font-family: "icomoon";
+    display: inline-block;
+    line-height: 18px;
+    width: 17px;
+    height: 17px;
+    background: #3B99FC;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+.departure_bd i:last-child::before{
+    display: none;
+}
+/*服务简述*/
+.content_sketch textarea{
+    width: 498px;
+    height: 98px;
+    border:1px solid #ccc;
+    margin-bottom: 20px;
+}
+/*提交*/
+.btn_submit input{
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    background: #FF8201;
+    display: block;
+    margin: 0 auto 20px;
+    transition: opacity 0.6s;
+    cursor: pointer;
+}
+.btn_submit input:hover{
+    opacity: 0.8;
+}

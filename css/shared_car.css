@@ -1,0 +1,57 @@
+/*共享汽车样式*/
+.shared_car{
+    box-sizing: border-box;
+}
+/*共享汽车介绍*/
+.shared_car_service{
+    border: 1px solid #ccc;
+    padding: 0 90px 20px 84px;
+}
+.shared_car_service h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    height: 70px;
+    line-height: 70px;
+}
+.service_title span,.pic_title span{
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.service_title span em,.pic_title span em{
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    background: #3B99FC;
+    margin-right: 10px;
+    transform: translateY(2px);
+}
+.service_content p{
+    line-height: 20px;
+    height: 60px;
+    font-size: 12px;
+    color: #333333;
+}
+/*昆明照片*/
+.pic_title{
+    margin-top: 30px;
+}
+.pic_inner{
+    text-align: center;
+}
+.pic_inner img{
+    width: 58%;
+    height: 58%;
+    margin-top: 20px;
+}
+/*文字*/
+.pic_inner p{
+    font-size: 12px;
+    color: #333;
+    text-align-last: left;
+    margin: 26px 0 20px 0;
+}

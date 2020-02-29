@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中国铁路旅游</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css"><!--去除浏览器默认样式-->
+    <link rel="stylesheet" href="css/base.css"><!--公共样式-->
+    <link rel="stylesheet" href="css/travel.css"><!--旅游样式-->
+    <link rel="stylesheet" href="css/travel_index.css"><!--旅游首页样式-->
+</head>
+<body>
+<!--头部 start-->
+<header>
+    <!--铁路旅游logo-->
+    <div class="travel_logo travel_w">
+        <h1>
+            <a href="#">中国铁路旅游</a>
+        </h1>
+    </div>
+    <!--铁路旅游横幅-->
+    <div class="travel_banner clearfix">
+        <ul class="clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--小圆点-->
+        <div class="travel_current clearfix">
+            <span class="active_bg"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--铁路旅游导航-->
+    <div class="traver_nav clearfix">
+        <ul class="travel_w">
+            <li>
+                <a href="#" id="time" style="color: yellow">
+                    时间,为当前的年月日,星期
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    首页
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    客运服务
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    货运服务
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    行包服务
+                </a>
+                <span></span>
+
+            </li>
+            <li>
+                <a href="#">
+                    旅游超市
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    车站引导
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    铁路常识
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    站车风采
+                </a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#">
+                    客户邮箱
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--铁路旅游搜索-->
+    <div class="traver_search">
+        <div class="traver_search_inner travel_w clearfix">
+            <!--城市定位与选择-->
+            <div class="traver_city fl">
+                <div class="traver_city_inner clearfix">
+                    <span>北京</span>
+                    <button></button>
+                    <i></i>
+                    <em></em>
+                </div>
+                <div class="traver_city_city">
+                    <dl>
+                        <dt>华北</dt>
+                        <dd style="color: red;" class="ke_xuan">北京</dd>
+                        <dd>天津</dd>
+                        <dd>河北</dd>
+                        <dd style="color: red;" class="ke_xuan">山西</dd>
+                        <dd style="color: red;" class="ke_xuan">内蒙古</dd>
+                    </dl>
+                    <dl>
+                        <dt>华南</dt>
+                        <dd style="color: red;" class="ke_xuan">广东</dd>
+                        <dd style="color: red;" class="ke_xuan">广西</dd>
+                        <dd>海南</dd>
+                    </dl>
+                    <dl>
+                        <dt>华东</dt>
+                        <dd style="color: red;" class="ke_xuan">上海</dd>
+                        <dd>江苏</dd>
+                        <dd>浙江</dd>
+                        <dd>安徽</dd>
+                        <dd style="color: red;" class="ke_xuan">福建</dd>
+                        <dd style="color: red;" class="ke_xuan">山东</dd>
+                    </dl>
+                    <dl>
+                        <dt>华中</dt>
+                        <dd style="color: red;" class="ke_xuan">河南</dd>
+                        <dd style="color: red;" class="ke_xuan">湖北</dd>
+                        <dd>湖南</dd>
+                        <dd style="color: red;" class="ke_xuan">江西</dd>
+                    </dl>
+                    <dl>
+                        <dt>西北</dt>
+                        <dd style="color: red;" class="ke_xuan">陕西</dd>
+                        <dd style="color: red;" class="ke_xuan">甘肃</dd>
+                        <dd style="color: red;" class="ke_xuan">青海</dd>
+                        <dd>宁夏</dd>
+                        <dd style="color: red;" class="ke_xuan">新疆</dd>
+                    </dl>
+                    <dl>
+                        <dt>西南</dt>
+                        <dd style="color: red;" class="ke_xuan">重庆</dd>
+                        <dd style="color: red;" class="ke_xuan">四川</dd>
+                        <dd style="color: red;" class="ke_xuan">贵州</dd>
+                        <dd style="color: red;" class="ke_xuan">云南</dd>
+                        <dd style="color: red;" class="ke_xuan">西藏</dd>
+                    </dl>
+                    <dl>
+                        <dt>东北</dt>
+                        <dd style="color: red;" class="ke_xuan">辽宁</dd>
+                        <dd>吉林</dd>
+                        <dd style="color: red;" class="ke_xuan">黑龙江</dd>
+                    </dl>
+                    <dl>
+                        <dt>台港澳</dt>
+                        <dd>台湾</dd>
+                        <dd>香港</dd>
+                        <dd>澳门</dd>
+                    </dl>
+                </div>
+            </div>
+            <!--搜索关键-->
+            <div class="search_crux fl">
+                <!--<div class="search_crux_inner">-->
+                <!---->
+                <!--</div>-->
+                <input type="text" placeholder="请输入目的地城市、关键字或主题">
+                <button>搜索</button>
+            </div>
+        </div>
+        <!--热门旅游推荐-->
+        <div class="travel_recommend_save travel_w">
+            <ul>
+                <li>热门旅游目的地：</li>
+                <li><a href="">甘肃</a></li>
+                <li><a href="">辽宁</a></li>
+                <li><a href="">山西</a></li>
+                <li><a href="">山东</a></li>
+                <li><a href="">江西</a></li>
+                <li><a href="">北京</a></li>
+                <li><a href="">河南</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--头部 end->
+<!--旅游首页内容 start-->
+<div class="travel_content">
+    <!--研学旅行-->
+    <div class="travel_learn travel_w">
+        <div class="travel_learn_hd clearfix">
+            <h2>研学旅行</h2>
+            <span><a href="#">更多<i></i></a></span>
+        </div>
+        <div class="travel_learn_bd">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn1.jpg" alt="">
+                        <div class="shelter">“龙腾中华” 研学旅行15天</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            深圳出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn2.jpg" alt="">
+                        <div class="shelter">高铁梦工厂 研学成都1日游</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            成都出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn3.jpg" alt="">
+                        <div class="shelter">天文科普 高铁游学 5日重庆—贵州</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            重庆出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn4.jpg" alt="">
+                        <div class="shelter">寻访中华传统文化 江油1日游</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            成都出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn5.jpg" alt="">
+                        <div class="shelter">走遍大中华·追寻中国梦 15天</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            深圳出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn6.jpg" alt="">
+                        <div class="shelter">传承红色精神 潞城 4日游</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            北京出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn7.jpg" alt="">
+                        <div class="shelter">寻根今昔铁路，探秘科技发展 乐山</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            成都出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/travel_learn8.jpg" alt="">
+                        <div class="shelter">古城邯郸 高铁研学 3日游</div>
+                        <div class="hot">热卖</div>
+                    </a>
+                    <div class="introduce clearfix">
+                        <div class="be_city">
+                            北京出发
+                        </div>
+                        <span>面议</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--铁路旅游专列-->
+    <div class="travel_w travel_special_train clearfix">
+        <div class="travel_special_train_hd clearfix">
+            <h2>旅游专列</h2>
+            <ul class="clearfix">
+                <li>
+                    <a href="#">甘肃</a>
+                </li>
+                <li>
+                    <a href="#">辽宁</a>
+                </li>
+                <li>
+                    <a href="#">山西</a>
+                </li>
+                <li>
+                    <a href="#">山东</a>
+                </li>
+                <li>
+                    <a href="#">江西</a>
+                </li>
+                <li>
+                    <a href="#">北京</a>
+                </li>
+                <li>
+                    <a href="#">河南</a>
+                </li>
+                <li>
+                    <a href="#">新疆</a>
+                </li>
+                <li>
+                    <a href="#">云南</a>
+                </li>
+                <li>
+                    <a href="#">上海</a>
+                </li>
+                <li>
+                    <a href="#">福建</a>
+                </li>
+                <li>
+                    <a href="#">广东</a>
+                </li>
+                <li>
+                    <a href="#">内蒙古</a>
+                </li>
+                <li>
+                    <a href="#">湖北</a>
+                </li>
+                <li>
+                    <a href="#">黑龙江</a>
+                </li>
+                <li>
+                    <a href="#">
+                        更多
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="travel_special_train_bd">
+            <div class="travel_special_train_bd_inner">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#" class="current_width">
+                            <img src="images/travel_special_train_bd_inner1.jpg" alt="">
+                            <div class="inner_img_text">
+                                <div class="inner_img_text_top clearfix">
+                                    <h3>“环西部火车游” 高品质旅游版专线列车</h3>
+                                    <span>￥2560</span>
+                                </div>
+                                <p>“环西部火车游”西北独家，高品质游版专专线列车，欢迎您的咨询订购！</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/travel_special_train_bd_inner2.jpg" alt="">
+                            <div class="inner_img_text">
+                                <div class="inner_img_text_top clearfix">
+                                    <h3>“环西部火车游”河西走廊·西行漫记敦煌、...</h3>
+                                    <span>￥2560</span>
+                                </div>
+                                <p>“环西部火车游”河西走廊·西行漫记，七彩丹霞、大佛寺、嘉峪关城楼、莫高窟、鸣沙山月牙泉高品质豪华旅游专线列车五日游</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/travel_special_train_bd_inner3.jpg" alt="">
+                            <div class="inner_img_text">
+                                <div class="inner_img_text_top clearfix">
+                                    <h3>“环西部火车游” 陇上江南·行摄山水陇南...</h3>
+                                    <span>￥930</span>
+                                </div>
+                                <p>“环西部火车游”陇上江南·行摄山水—青木川、阳坝梅园沟、万象洞高品质豪华旅游专线列车三日游</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/travel_special_train_bd_inner4.jpg" alt="">
+                            <div class="inner_img_text">
+                                <div class="inner_img_text_top clearfix">
+                                    <h3>“环西部火车游” 大美青海·藏传文化青海...</h3>
+                                    <span>￥980</span>
+                                </div>
+                                <p>“环西部火车游” 大美青海·藏传文化青海湖、塔尔寺、茶卡高品质三日游</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/travel_special_train_bd_inner5.jpg" alt="">
+                            <div class="inner_img_text">
+                                <div class="inner_img_text_top clearfix">
+                                    <h3>“环西部火车游”塞上江南·神奇宁夏银川、...</h3>
+                                    <span>￥980</span>
+                                </div>
+                                <p>“环西部火车游”塞上江南·神奇宁夏—沙湖、西部影视城、贺兰山岩画、沙坡头高品四日游</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--热门景点-->
+    <div class="travel_hot_spot travel_w">
+        <div class="travel_hot_spots clearfix">
+            <div class="travel_hot_spots_hd">
+                <h2>热门景点</h2>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">甘肃</a>
+                    </li>
+                    <li>
+                        <a href="#">辽宁</a>
+                    </li>
+                    <li>
+                        <a href="#">山西</a>
+                    </li>
+                    <li>
+                        <a href="#">山东</a>
+                    </li>
+                    <li>
+                        <a href="#">江西</a>
+                    </li>
+                    <li>
+                        <a href="#">北京</a>
+                    </li>
+                    <li>
+                        <a href="#">河南</a>
+                    </li>
+                    <li>
+                        <a href="#">新疆</a>
+                    </li>
+                    <li>
+                        <a href="#">云南</a>
+                    </li>
+                    <li>
+                        <a href="#">上海</a>
+                    </li>
+                    <li>
+                        <a href="#">福建</a>
+                    </li>
+                    <li>
+                        <a href="#">广东</a>
+                    </li>
+                    <li>
+                        <a href="#">内蒙古</a>
+                    </li>
+                    <li>
+                        <a href="#">湖北</a>
+                    </li>
+                    <li>
+                        <a href="#">黑龙江</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            更多
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="travel_hot_spots_bd clearfix">
+            <div class="travel_hot_spots_bd_left fl">
+                <div class="travel_hot_spots_bd_left_content">
+                    <img src="images/sizhouzhilu.jpg" alt="">
+                    <div class="travel_hot_spots_bd_left_content_name">丝绸之路</div>
+                </div>
+            </div>
+            <div class="travel_hot_spots_bd_right fl clearfix">
+                <div class="travel_hot_spots_bd_right_list clearfix">
+                    <ul class="clearfix">
+                        <li>
+                            <a class="hot_spots_bd_right_list_img">
+                                <img src="images/dameilanzhou.jpg" alt="">
+                            </a>
+                            <div class="hot_spots_bd_right_list_name">
+                                <span>大美兰州</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="hot_spots_bd_right_list_img">
+                                <img src="images/rongtong1.jpg" alt="">
+                            </a>
+                            <div class="hot_spots_bd_right_list_name">
+                                <span>峡谷溶洞</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="hot_spots_bd_right_list_img">
+                                <img src="images/gansu1.jpg" alt="">
+                            </a>
+                            <div class="hot_spots_bd_right_list_name">
+                                <span>山水甘肃</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="hot_spots_bd_right_list_img">
+                                <img src="images/bingchuan1.jpg" alt="">
+                            </a>
+                            <div class="hot_spots_bd_right_list_name">
+                                <span>冰川雪峰</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="hot_spots_bd_right_list_img">
+                                <img src="images/caoyuan.jpg" alt="">
+                            </a>
+                            <div class="hot_spots_bd_right_list_name">
+                                <span>桑科草原</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="hot_spots_bd_right_list_img">
+                                <img src="images/huishi.jpg" alt="">
+                            </a>
+                            <div class="hot_spots_bd_right_list_name">
+                                <span>会宁会师</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--旅行社推荐-->
+    <div class="travel_w travel_agency_recommendation">
+        <div class="travel_agency_recommendation_hd">
+            <h2>旅行社推荐</h2>
+        </div>
+        <div class="travel_agency_recommendation_bd">
+            <div class="travel_agency_recommendation_bd_list">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe1.jpg" alt="">
+                            <span>南昌铁路国际旅行社</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe2.jpg" alt="">
+                            <span>昆明铁路国际旅行社</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe4.jpg" alt="">
+                            <span>临汾京铁国际旅行社有限公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe5.jpg" alt="">
+                            <span>甘肃兰铁国际旅行社有限公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe6.jpg" alt="">
+                            <span>沈阳铁道国际旅行社(集团)有限公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe7.jpg" alt="">
+                            <span>乌鲁木齐铁道国际旅行社有限责任公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe8.jpg" alt="">
+                            <span>广西宁铁国际旅游有限责任公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe9.jpg" alt="">
+                            <span>西安铁道国际旅行社</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe10.jpg" alt="">
+                            <span>山西铁路国际旅行社有限公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe11.jpg" alt="">
+                            <span>郑州中原铁道国际旅行社有限公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe12.jpg" alt="">
+                            <span>青岛铁路国际旅行社有限公司</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tuijianshe13.jpg" alt="">
+                            <span>上海铁路国际旅游（集团）有限公司</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="travel_agency_recommendation_bd_button clearfix">
+                <a href="javascript:void(0)"></a>
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--旅游首页内容 end-->
+<!--底部strat-->
+<footer>
+    <div class="travel_footer">
+        <div>
+            <a href="#">
+                关于我们
+            </a>
+            <span>|</span>
+            <a href="#">
+                网站声明
+            </a>
+        </div>
+        <p>版权所有 © 2008-2017 中国铁路信息技术中心 中国铁道科学研究院</p>
+        <p>京ICP备15003716号-3 | 京ICP证150437号</p>
+    </div>
+</footer>
+<!--底部end-->
+</body>
+<script src="js/focusAndCompatible.js"></script>
+<script src="js/show_hide.js"></script>
+<script src="js/bg_click.js"></script>
+<script src="js/click_carousel.js"></script>
+<script src="js/showHideBb.js"></script>
+<script src="js/page.js"></script>
+<script>
+    let page = new Page();
+    //横幅
+    page.click_carousel_event(page.getClassName("travel_current")[0], page.Focus.getFirstElement(page.getClassName("travel_banner")[0]), "active_bg", 30000);
+</script>
+<!--jQuery实现代码-->
+<script src="jquery-1.12.1.js"></script>
+<script src="js/railway_tourism.js"></script>
+<script src="js/travel_index.js"></script>
+<script>
+    function getDates(dt) {
+        let str1 = "";//存储时间的字符串
+        let str2 = "";//存储时间的字符串
+        //获取年
+        let year = dt.getFullYear();
+        //获取月
+        let month = dt.getMonth() + 1;
+        //获取日
+        let day = dt.getDate();
+        //获取小时
+        let hour = dt.getHours();
+        //获取分钟
+        let min = dt.getMinutes();
+        //获取秒
+        let sec = dt.getSeconds();
+        //获取星期
+        let week = dt.getDay();
+        month = month < 10 ? "0" + month : month;
+        day = day < 10 ? "0" + day : day;
+        hour = hour < 10 ? "0" + hour : hour;
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+        str1 = year + "年" + month + "月" + day + "日" + "星期" + week;
+        return str1;
+    }
+
+    let dt = new Date();
+    document.getElementById("time").innerHTML = getDates(dt);
+</script>
+</html>

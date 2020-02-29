@@ -1,0 +1,78 @@
+.consign {
+    background: url("../images/bluebg.gif") repeat-x;
+    width: 958px;
+    margin: 3px auto;
+    padding: 10px 8px 0 10px;
+}
+
+.consign_nav {
+    width: 212px;
+    background: #D3EDFD;
+    height: 730px;
+    float: left;
+    margin-right: 16px;
+}
+
+.consign_nav dt {
+    height: 30px;
+    background: url("../images/btbj_3.gif");
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #333333;
+    font-size: 12px;
+}
+
+.consign_nav dd {
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 30px;
+    width: 106px;
+    background: url("../images/pic_29.gif") no-repeat;
+    background-position: left center;
+    color: #267AC4;
+}
+
+.consign_inner {
+    width: 708px;
+    float: left;
+    padding: 0 9px;
+}
+
+.consign_inner_hd {
+    width: 710px;
+    float: left;
+    color: #000000;
+    font-size: 12px;
+    height: 31px;
+    background: url("../images/c_b.gif");
+    line-height: 28px;
+    margin: 0 9px;
+    overflow: hidden;
+}
+
+.c_l {
+    float: left;
+}
+
+.c_r {
+    float: right;
+}
+
+.consign_inner_hd i {
+    display: inline-block;
+    transform: translateY(2px);
+    background: url("../images/c_d.gif") no-repeat center;
+    padding: 0 10px;
+    height: 13px;
+    width: 5px;
+}
+
+.consign_content {
+    float: left;
+    width: 710px;
+    margin: 9px 9px 0 10px;
+    height: 100px;
+}
