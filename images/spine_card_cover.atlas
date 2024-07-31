@@ -1,0 +1,83 @@
+
+spine_card_cover.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+card_back
+  rotate: true
+  xy: 2, 124
+  size: 750, 1009
+  orig: 750, 1009
+  offset: 0, 0
+  index: -1
+card_back1
+  rotate: false
+  xy: 1725, 1083
+  size: 300, 180
+  orig: 300, 180
+  offset: 0, 0
+  index: -1
+card_back2
+  rotate: false
+  xy: 1423, 1262
+  size: 300, 303
+  orig: 300, 303
+  offset: 0, 0
+  index: -1
+card_back3
+  rotate: false
+  xy: 2, 20
+  size: 200, 102
+  orig: 200, 102
+  offset: 0, 0
+  index: -1
+card_back4
+  rotate: true
+  xy: 204, 2
+  size: 120, 103
+  orig: 120, 103
+  offset: 0, 0
+  index: -1
+card_back_light
+  rotate: true
+  xy: 1423, 1567
+  size: 459, 589
+  orig: 459, 589
+  offset: 0, 0
+  index: -1
+card_front
+  rotate: false
+  xy: 671, 1017
+  size: 750, 1009
+  orig: 750, 1009
+  offset: 0, 0
+  index: -1
+cardback
+  rotate: false
+  xy: 1013, 6
+  size: 750, 1009
+  orig: 750, 1009
+  offset: 0, 0
+  index: -1
+juese
+  rotate: false
+  xy: 2, 876
+  size: 667, 1150
+  orig: 667, 1150
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 1765, 309
+  size: 772, 176
+  orig: 772, 176
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 1725, 1265
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
